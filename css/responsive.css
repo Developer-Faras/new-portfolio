@@ -1,0 +1,337 @@
+/* All Responsive Code Are Goes Haire */
+
+
+/* Up To 1500 px */
+@media (min-width: 1500px) {
+    html{
+        font-size: 18px;
+    }
+
+}
+
+/* 1300 - 1500*/
+@media (max-width: 1499px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+/* 1200 - 1300 */
+@media (max-width: 1299px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* 1100 - 1200 */
+@media (max-width: 1199px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* 1000 - 1100 */
+@media (max-width: 1099px) {
+    html{
+        font-size: 13px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 220px;
+    }
+
+    /* Main Content */
+    .main-content {
+        left: 220px;
+    }
+
+    /* Services */
+    .services .services-item .inner {
+        border: 2px solid var(--bg-50);
+    }
+}
+
+/* 900 - 1000 */
+@media (max-width: 999px){
+    html{
+        font-size: 13px;
+    }
+
+    section .container {
+        padding-top: 3.25rem;
+        padding-bottom: 3.75rem;
+    }
+
+    /* Home */
+    .home .img-box {
+        flex: 0 0 98%;
+        max-width: 98%;
+    }
+    
+    .home .img-box:before,
+    .home .img-box:after{
+        display: none;
+    }
+
+    .home .text-box {
+        flex: 0 0 98%;
+        max-width: 98%;
+        min-height: 94vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .img-box img {
+        height: auto;
+        border-radius: 3px;
+    }
+
+    /* About */
+    .about .about-bio .left {
+        flex: 0 0 100%;
+    }
+
+    .about .about-bio .right {
+        display: none;
+    }
+
+    .about .about-bio {
+        width: 100%;
+    }
+
+    .about .another-skill {
+        display: block;
+        margin-top: 5rem;
+    }
+
+    .about .skill-wraper .skill {
+        margin-bottom: 1.6rem;
+    }
+
+    /* Services */
+    .services .services-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Portfolio */
+    .portfolio .portfolio-item .text-box .title {
+        font-size: 1.75rem;
+        word-spacing: 4px;
+    }
+    .portfolio .portfolio-item .text-box .desc {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-top: 0.2rem;
+    }
+    .portfolio .portfolio-item .text-box .usages {
+        width: 80%;
+        margin-bottom: 1rem;
+        display: none;
+    }
+    .portfolio .portfolio-item .text-box .btn-box {
+        display: block;
+        width: 90%;
+    }
+    .portfolio .portfolio-item .text-box a.link {
+        margin: 0.8rem 0rem;
+    }
+}
+
+/* 800 - 900 */
+@media (max-width: 899px) {
+    html{
+        font-size: 12px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 190px;
+    }
+
+    /* Main Content */
+    .main-content {
+        left: 190px;
+    }
+    
+    .about .edu-content {
+        margin: 0;
+        flex-direction: column;
+    }
+    .about .education, .about .experience {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 4rem;
+    }
+    .about .edu-content .timeline .timeline-item::before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 6px;
+        background: var(--skin-color);
+    }
+
+    /* Services */
+    .services .services-content {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .services .services-item {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    /* Portfolio */
+    .portfolio .portfolio-item {
+        flex: 0 0 98%;
+        max-width: 98%;
+    }
+
+    /* Contact */
+    .contact .box-content .box {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Below To 700 */
+@media (max-width: 700px){
+    html{
+        font-size: 13px;
+    }
+
+
+    .main-content{
+        left: 0px;
+    }
+
+
+    /* Nav Toggler */
+    .nav-toggler {
+        display: flex;
+    }
+    
+
+    /* Other Components */
+    section {
+        padding: 0 40px;
+    }
+
+    /* Mobile Nav Design */
+    .sidebar {
+        background: var(--bg-100);
+        width: 80%;
+        height: 170px;
+        bottom: -180px;
+        left: 50%;
+        right: 0;
+        top: auto;
+        flex-direction: row;
+        transform: translate(-50%, 0);
+        border-radius: 10px 10px 0 0;
+        transition: all 1s ease;
+        border: 4px solid var(--bg-50);
+        box-shadow: none;
+        opacity: 0;
+    }
+    .sidebar.mobile_active{
+        box-shadow: 0px 0px 40px -4px rgba(0,0,0,0.3);
+        bottom: 10px;
+        opacity: 1;
+    }
+
+    /* Logo */
+    .sidebar .logo {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 600;
+        top: 0;
+        left: 10px;
+    }
+
+    .sidebar .logo a {
+        writing-mode: tb-rl;
+        padding: 0;
+        position: static;
+    }
+
+    .sidebar .logo a:hover{
+        padding: 0px;
+        color: var(--skin-color);
+    }
+    
+    .sidebar .logo a:before,
+    .sidebar .logo a:after{
+        display: none;
+    } 
+
+    .sidebar .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .sidebar .nav li {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .sidebar .nav li a {
+        font-size: 1.2rem;
+        border: 2px solid var(--bg-50);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 8px;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+    }
+    .sidebar .nav li a i{
+        margin: 0;
+    }
+    .sidebar .nav li a span {
+        display: none;
+        position: absolute;
+        bottom: 140%;
+        background: var(--text-700);
+        color: #fff;
+        padding: 0.3rem 0.8rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    .sidebar .nav li a span::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: var(--text-700);
+        bottom: -11%;
+        transform: rotate(45deg);
+    }
+    .sidebar .nav li a:hover span{
+        display: flex;
+    }
+
+    /* Sosial */
+    .sidebar .sosial {
+        position: relative;
+        bottom: auto;
+        display: block;
+        right: 16px;
+    }
+    .sidebar .sosial li {
+        display: block;
+        margin: 2px 0px;
+    }
+    
+}
