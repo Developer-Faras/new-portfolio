@@ -324,26 +324,15 @@
     }
 
     /* Sosial */
-    .sidebar .sosial,
-    .fixed_content .sosial {
+    .sidebar .sosial {
         position: relative;
         bottom: auto;
         display: block;
         right: 16px;
     }
     
-    .fixed_content .sosial {
-        right: auto;
-        flex-direction: column;
-        background: var(--bg-100);
-        padding: 0.5rem 0;
-        margin-bottom: 0.4rem;
-        border: 2px solid var(--bg-50);
-        border-radius: 2px;
-    }
 
-    .sidebar .sosial li,
-    .fixed_content .sosial li {
+    .sidebar .sosial li {
         display: block;
         margin: 2px 0px;
     }
@@ -357,19 +346,48 @@
     }
 
     /* Sidebar */
+    .sidebar {
+        display: block;
+        width: 60px;
+        left: 40px;
+        bottom: 20px;
+        height: auto;
+        opacity: 0;
+        border: 2px solid var(--bg-50);
+        visibility: hidden;
+    }
+    .sidebar.mobile_active{
+        opacity: 1;
+        bottom: 64px;
+        visibility: visible;
+    }
+
     .sidebar .logo{
         display: none;
     }
     .sidebar .nav{
         margin: 0 auto;
+        flex-direction: column;
+    }
+    .sidebar .nav li {
+        width: 42px;
+        margin-bottom: 0.8rem;
+    }
+    .sidebar .nav li a {
+        font-size: 1.6rem;
+        width: 100%;
     }
     .sidebar .sosial{
-        display: none;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .sidebar .sosial li a{
+        font-size: 1.8rem;
     }
 
-    .fixed_content .sosial{
-        display: flex!important;
-    }
+    
 }
 
 /* Below To 500 */
@@ -382,5 +400,64 @@
     .services .services-item {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+/* Below To 400 */
+@media (max-width: 400px){
+    html{
+        font-size: 10px;
+    }
+}
+
+/* Below To 350 */
+@media (max-width: 350px){
+    html{
+        font-size: 9px;
+    }
+    section {
+        padding: 0 20px;
+    }
+
+
+    .home .text-box .hi .name {
+        color: var(--skin-color);
+        font-size: 2.6rem;
+    }
+
+    /* CContact */
+    .contact .box-content .box {
+        flex: 0 0 98%;
+        max-width: 98%;
+        margin-bottom: 1.4rem;
+    }
+    .contact .form-content .row .input-box {
+        flex: 0 0 99%;
+        padding: 0 1rem;
+    }
+    .contact .form-content .row .input-box input,
+    .contact .form-content .row .input-box textarea {
+        padding: 1rem 0.6rem;
+        font-size: 1rem;
+    }
+}
+
+/* Below To 250 */
+@media (max-width: 250px){
+    html{
+        font-size: 8px;
+    }
+    section{
+        padding: 0 10px;
+    }
+}
+
+/* Below To 200 */
+@media (max-width: 200px){
+    html{
+        font-size: 7px;
+    }
+    section{
+        padding: 0;
     }
 }
