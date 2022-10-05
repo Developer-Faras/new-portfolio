@@ -230,35 +230,47 @@ section .section-header .section-title:after {
 
 
 /* Sosial Design */
-.sidebar .sosial {
+.sidebar .sosial,
+.fixed_content .sosial {
     position: relative;
     bottom: 2rem;
     display: flex;
     align-items: center;
 }
 
-.sidebar .sosial li {
+.sidebar .sosial li,
+.fixed_content .sosial li {
     display: block;
     margin: 0 6px;
 }
 
-.sidebar .sosial li a {
+.sidebar .sosial li a,
+.fixed_content .sosial li a {
     padding: 2px;
     font-size: 1.5rem;
     color: var(--text-900);
     cursor: pointer;
     transition: all 0.2s ease;
 }
+.fixed_content .sosial li a {
+    font-size: 1.8rem;
+}
+.fixed_content .sosial{
+    display: none!important;
+}
 
-.sidebar .sosial li a:hover {
+.sidebar .sosial li a:hover,
+.fixed_content .sosial li a:hover {
     color: var(--skin-color);
 }
 
-.sidebar .sosial li a i {
+.sidebar .sosial li a i,
+.fixed_content .sosial li a i {
     transition: all 0.1s ease;
 }
 
-.sidebar .sosial li a:hover i {
+.sidebar .sosial li a:hover i,
+.fixed_content .sosial li a:hover i {
     transform: scale(0.9);
 }
 
@@ -1005,7 +1017,7 @@ section .section-header .section-title:after {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 999;
+    z-index: 600;
 }
 /* Nav Toggler Design */
 .nav-toggler {

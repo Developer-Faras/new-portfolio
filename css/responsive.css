@@ -222,7 +222,7 @@
 
     /* Other Components */
     section {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     /* Mobile Nav Design */
@@ -241,6 +241,7 @@
         border: 4px solid var(--bg-50);
         box-shadow: none;
         opacity: 0;
+        z-index: 500;
     }
     .sidebar.mobile_active{
         box-shadow: 0px 0px 40px -4px rgba(0,0,0,0.3);
@@ -323,15 +324,63 @@
     }
 
     /* Sosial */
-    .sidebar .sosial {
+    .sidebar .sosial,
+    .fixed_content .sosial {
         position: relative;
         bottom: auto;
         display: block;
         right: 16px;
     }
-    .sidebar .sosial li {
+    
+    .fixed_content .sosial {
+        right: auto;
+        flex-direction: column;
+        background: var(--bg-100);
+        padding: 0.5rem 0;
+        margin-bottom: 0.4rem;
+        border: 2px solid var(--bg-50);
+        border-radius: 2px;
+    }
+
+    .sidebar .sosial li,
+    .fixed_content .sosial li {
         display: block;
         margin: 2px 0px;
     }
     
+}
+
+/* Below To 600 */
+@media (max-width: 600px){
+    html{
+        font-size: 12px;
+    }
+
+    /* Sidebar */
+    .sidebar .logo{
+        display: none;
+    }
+    .sidebar .nav{
+        margin: 0 auto;
+    }
+    .sidebar .sosial{
+        display: none;
+    }
+
+    .fixed_content .sosial{
+        display: flex!important;
+    }
+}
+
+/* Below To 500 */
+@media (max-width: 500px){
+    html{
+        font-size: 11px;
+    }
+
+    /* Services */
+    .services .services-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
