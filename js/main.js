@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('.nav-toggler').click(function () {
         $(this).toggleClass('mobile_active');
         $('.sidebar').toggleClass('mobile_active');
+        $('.fixed_content').toggleClass('nav_active')
 
     });
 
@@ -15,5 +16,19 @@ $(document).ready(function () {
     });
 
 
+    // Theme Changer
+    $('.theme_changer_toggler').click(function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $('.theme_color_wraper').toggleClass('active');
+    });
+
+    // Theme Color Changer
+    $('.theme_color').each(function () {
+        $(this).click(function () {
+            console.log('color')
+        });
+    });
 
 });
