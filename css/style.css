@@ -278,8 +278,8 @@ section .section-header .section-title:after {
 }
 
 .main-content::-webkit-scrollbar {
-    width: 10px;
-    background: #bebdff;
+    width: 0.650rem;
+    background: var(--scrollbar-bg);
 }
 
 .main-content::-webkit-scrollbar-thumb {
@@ -1112,7 +1112,7 @@ section .section-header .section-title:after {
     }
 }
 .theme_changer_toggler.active i{
-    animation: spin 2s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
 
@@ -1151,7 +1151,7 @@ section .section-header .section-title:after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 15rem;
+    width: 14rem;
 }
 
 .theme_color_wraper .color_list li{
