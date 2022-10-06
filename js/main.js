@@ -75,17 +75,49 @@ $(document).ready(function () {
             $('.fixed_content').removeClass('nav_active');
         }
     });
+
+    // Dark Mode Toggler
+    let dark_mode = false;
+
+    $(".mode_changer").click(function (e) {
+        e.preventDefault();
+        $(this).children('i').toggleClass('fa-moon fa-sun');
+        $('body').toggleClass('dark_mode_active');
+
+
+
+        let bg_900 = "#f2f2fc",
+            bg_100 = "#fdf9ff",
+            bg_50 = "#e8dfec",
+            text_900 = "#302c4d",
+            text_700 = "#504e70";
+
+        if (dark_mode) {
+            dark_mode = false;
+
+            bg_900 = "#f2f2fc";
+            bg_100 = "#fdf9ff";
+            bg_50 = "#e8dfec";
+            text_900 = "#302c4d";
+            text_700 = "#504e70";
+        } else {
+            dark_mode = true
+
+            bg_900 = "#151515";
+            bg_100 = "#222222";
+            bg_50 = "#393939";
+            text_900 = "#ffffff";
+            text_700 = "#e9e9e9";
+        }
+
+        $(':root').css({
+            '--bg-900': bg_900,
+            '--bg-100': bg_100,
+            '--bg-50': bg_50,
+            '--text-900': text_900,
+            '--text-700': text_700
+        });
+
+    });
 });
 
-
-// Theme Function
-function setTheme(theme) {
-    /*
-       default = #ec1839
-       blue =  #0646d2
-       green = #39a47b
-       pink = #f618b4
-       orange = #ff3b19
-   */
-
-}
