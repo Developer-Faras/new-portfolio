@@ -28,7 +28,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 14px;
 }
 
@@ -261,7 +261,7 @@ section .section-header .section-title:after {
     transition: all 0.1s ease;
 }
 
-.sidebar .sosial li a:hover i{
+.sidebar .sosial li a:hover i {
     transform: scale(0.9);
 }
 
@@ -572,7 +572,7 @@ section .section-header .section-title:after {
 
 
 /* Education Experience Design */
-.about .edu-content{
+.about .edu-content {
     margin-top: 30px;
 }
 
@@ -674,7 +674,7 @@ section .section-header .section-title:after {
     padding: 0 10px;
 }
 
-.services .services-item .inner{
+.services .services-item .inner {
     background: var(--bg-100);
     border: 1px solid var(--bg-50);
     padding: 26px 15px;
@@ -683,10 +683,12 @@ section .section-header .section-title:after {
     transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.services .services-item:hover .inner{
+
+.services .services-item:hover .inner {
     box-shadow: 0 0 20px -10px var(--text-900);
 }
-.services .services-item .icon-box{
+
+.services .services-item .icon-box {
     width: 60px;
     height: 60px;
     color: var(--skin-color);
@@ -700,22 +702,25 @@ section .section-header .section-title:after {
     transition: all 0.2s ease;
     border: 1px solid var(--skin-color);
 }
-.services .services-item:hover .icon-box{
+
+.services .services-item:hover .icon-box {
     background: var(--skin-color);
     color: #fff;
     transform: scale(0.9);
 }
 
-.services .services-item .text-box{
+.services .services-item .text-box {
     display: block;
 }
-.services .services-item .text-box .title{
+
+.services .services-item .text-box .title {
     font-size: 1.375rem;
     font-weight: 700;
     color: var(--text-900);
     margin-bottom: 0.2rem;
 }
-.services .services-item .text-box .dec{
+
+.services .services-item .text-box .dec {
     font-size: 1rem;
     color: var(--text-700);
     line-height: 25px;
@@ -725,18 +730,20 @@ section .section-header .section-title:after {
 
 
 /* Portfolio Section Design */
-.portfolio .main-title{
+.portfolio .main-title {
     font-size: 1.5rem;
     color: var(--text-900);
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: 0.3px;
 }
-.portfolio .portfolio-content{
+
+.portfolio .portfolio-content {
     align-items: flex-start;
     justify-content: space-between;
 }
-.portfolio .portfolio-item{
+
+.portfolio .portfolio-item {
     padding: 8px;
     flex: 0 0 49%;
     background: var(--bg-100);
@@ -749,14 +756,17 @@ section .section-header .section-title:after {
     overflow: hidden;
     transition: all 0.2s ease;
 }
-.portfolio .portfolio-item:hover{
+
+.portfolio .portfolio-item:hover {
     transform: scale(0.95);
 }
-.portfolio .portfolio-item img{
+
+.portfolio .portfolio-item img {
     width: 100%;
     margin-bottom: -6px;
 }
-.portfolio .portfolio-item .text-box{
+
+.portfolio .portfolio-item .text-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -776,25 +786,28 @@ section .section-header .section-title:after {
     opacity: 0;
     transition: all 0.8s ease-out;
 }
-.portfolio .portfolio-item:hover .text-box{
-    animation: zoomInDown; 
-    animation-duration: 0.6s; 
+
+.portfolio .portfolio-item:hover .text-box {
+    animation: zoomInDown;
+    animation-duration: 0.6s;
     opacity: 1;
 }
 
-.portfolio .portfolio-item .text-box .title{
+.portfolio .portfolio-item .text-box .title {
     font-size: 2.125rem;
     color: #fff;
     font-weight: 800;
     word-spacing: 6px;
 }
-.portfolio .portfolio-item .text-box .desc{
+
+.portfolio .portfolio-item .text-box .desc {
     font-size: 1.125rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: 0.8rem;
 }
-.portfolio .portfolio-item .text-box .usages{
+
+.portfolio .portfolio-item .text-box .usages {
     display: block;
     text-align: left;
     color: #fff;
@@ -804,12 +817,14 @@ section .section-header .section-title:after {
     margin-bottom: 2rem;
     box-sizing: border-box;
 }
-.portfolio .portfolio-item .text-box .usages .list-title{
+
+.portfolio .portfolio-item .text-box .usages .list-title {
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 0.2rem;
 }
-.portfolio .portfolio-item .text-box .usages .list-item{
+
+.portfolio .portfolio-item .text-box .usages .list-item {
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -818,12 +833,13 @@ section .section-header .section-title:after {
 }
 
 
-.portfolio .portfolio-item .text-box .btn-box{
+.portfolio .portfolio-item .text-box .btn-box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.portfolio .portfolio-item .text-box a.link{
+
+.portfolio .portfolio-item .text-box a.link {
     text-decoration: none;
     background: #fff;
     margin: 0 1rem;
@@ -838,44 +854,49 @@ section .section-header .section-title:after {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-.portfolio .portfolio-item .text-box a.link:hover{
+
+.portfolio .portfolio-item .text-box a.link:hover {
     background: var(--skin-color);
     color: #fff;
     transform: scale(0.92);
 }
 
-.portfolio .portfolio-item .text-box a.link i{
+.portfolio .portfolio-item .text-box a.link i {
     font-size: 1.125rem;
     margin-right: 0.5rem;
 }
+
 /* animate__ */
 
 
 /* Contact Design */
-.contact .extra-title{
+.contact .extra-title {
     display: block;
     text-align: center;
     margin-bottom: 2rem;
 }
-.contact .extra-title .title{
+
+.contact .extra-title .title {
     font-size: 1.375rem;
     font-weight: 700;
     color: var(--skin-color);
     padding-bottom: 0.3rem;
 }
-.contact .extra-title .dec{
+
+.contact .extra-title .dec {
     font-size: 1.0625rem;
     font-weight: 500;
     color: var(--text-900);
 }
 
-.contact .box-content{
+.contact .box-content {
     align-items: flex-start;
     justify-content: space-between;
     padding: 1rem 0rem;
     margin-bottom: 2.6rem;
 }
-.contact .box-content .box{
+
+.contact .box-content .box {
     flex: 0 0 24%;
     max-width: 24%;
     text-align: center;
@@ -888,12 +909,13 @@ section .section-header .section-title:after {
     display: flex;
     flex-direction: column;
 }
-.contact .box-content .box:hover{
+
+.contact .box-content .box:hover {
     box-shadow: 0 0 20px -9px var(--text-700);
     transform: scale(0.95);
 }
 
-.contact .box-content .box .icon-box{
+.contact .box-content .box .icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -901,32 +923,37 @@ section .section-header .section-title:after {
     color: var(--skin-color);
     margin-bottom: 1rem;
 }
-.contact .box-content .box .text-box{
+
+.contact .box-content .box .text-box {
     display: block;
     text-align: center;
 }
-.contact .box-content .box .text-box .title{
+
+.contact .box-content .box .text-box .title {
     font-size: 1.125rem;
     color: var(--text-900);
     margin-bottom: 0rem;
 }
-.contact .box-content .box .text-box .result{
+
+.contact .box-content .box .text-box .result {
     font-size: 1rem;
     color: var(--text-700);
 }
 
 
 /* Contact Form Design */
-.contact .form-content{
+.contact .form-content {
     display: block;
     padding: 1rem 0rem;
 }
-.contact .form-content .row{
+
+.contact .form-content .row {
     align-items: flex-start;
     justify-content: space-between;
 }
-.contact .form-content .row .input-box{
-    display: flex;
+
+.contact .form-content .row .input-box {
+    display: grid;
     align-items: center;
     justify-content: flex-start;
     flex: 0 0 49%;
@@ -935,15 +962,21 @@ section .section-header .section-title:after {
     margin-bottom: 0.8rem;
     border-radius: 2px;
     background: var(--bg-100);
+    grid-template-columns: 20px max-content;
+    overflow: hidden;
 }
-.contact .form-content .row .input-box i{
+
+.contact .form-content .row .input-box i {
     font-size: 1.125rem;
     margin-right: 0.4rem;
     color: var(--text-700);
     transition: all 0.2s ease;
+    grid-column: 1;
+    grid-row: 1;
 }
+
 .contact .form-content .row .input-box input,
-.contact .form-content .row .input-box textarea{
+.contact .form-content .row .input-box textarea {
     padding: 0.7rem 0.6rem;
     border: none;
     font-size: 0.875rem;
@@ -951,33 +984,39 @@ section .section-header .section-title:after {
     display: flex;
     align-items: center;
     color: var(--text-700);
-    width: 100%;
+    width: 243%;
     resize: none;
+    background: transparent;
+    grid-column: 2;
+    grid-row: 1;
 }
+
 /* 
 .contact .form-content .row .input-box:hover i, */
 .contact .form-content .row .input-box.active i,
-.contact .form-content .row .input-box:hover i{
+.contact .form-content .row .input-box:hover i {
     color: var(--skin-color);
     transform: scale(0.9);
 }
 
-.contact .form-content .row .input-box input::placeholder{
+.contact .form-content .row .input-box input::placeholder {
     font-size: 0.8125rem;
     color: var(--text-700);
 }
 
 /* Textarea Design */
-.contact .form-content .row.message .input-box{
+.contact .form-content .row.message .input-box {
     flex: 0 0 100%;
     align-items: flex-start;
 }
-.contact .form-content .row.message .input-box i{
+
+.contact .form-content .row.message .input-box i {
     padding-top: 0.8rem;
 }
 
 /* Button Design */
-.contact .form-content .row.btn-row .input-box{
+.contact .form-content .row.btn-row .input-box {
+    display: flex;
     padding: 0;
     flex: 0 0 100%;
     align-items: center;
@@ -985,7 +1024,8 @@ section .section-header .section-title:after {
     background: transparent;
     border: none;
 }
-.contact .form-content .row.btn-row .input-box button{
+
+.contact .form-content .row.btn-row .input-box button {
     padding: 1rem 3rem;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -996,10 +1036,17 @@ section .section-header .section-title:after {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-.contact .form-content .row.btn-row .input-box button:hover{
+
+.contact .form-content .row.btn-row .input-box button:hover {
     color: var(--skin-color);
     border-color: var(--skin-color);
     transform: scale(0.94);
+}
+
+.contact .form-content .row .input-box input:focus ~ i,
+.contact .form-content .row .input-box textarea:focus ~ i {
+    color: var(--skin-color);
+    transform: scale(0.9);
 }
 
 
@@ -1053,27 +1100,31 @@ section .section-header .section-title:after {
     left: 0px;
     transition: all 0.4s ease;
 }
-.nav-toggler span::before{
+
+.nav-toggler span::before {
     top: 8px;
 }
+
 .nav-toggler span::after {
     bottom: 7px;
 }
 
-.nav-toggler.mobile_active span::before, 
+.nav-toggler.mobile_active span::before,
 .nav-toggler.mobile_active span::after {
     left: 32px;
 }
+
 .nav-toggler.mobile_active span::before {
     transform: rotate(45deg);
     top: 0;
 }
-.nav-toggler.mobile_active span::after{
+
+.nav-toggler.mobile_active span::after {
     transform: rotate(-45deg);
     top: 0px;
 }
 
-.nav-toggler.mobile_active span{
+.nav-toggler.mobile_active span {
     left: -25px;
 }
 
@@ -1099,26 +1150,28 @@ section .section-header .section-title:after {
 .nav-toggler:hover,
 .nav-toggler.mobile_active,
 .fixed_content .btn:hover,
-.fixed_content .btn.active{
+.fixed_content .btn.active {
     border-color: var(--skin-color);
 }
 
 /* Theme Toggler */
 @keyframes spin {
-    0%{
+    0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-.theme_changer_toggler.active i{
+
+.theme_changer_toggler.active i {
     animation: spin 3s linear infinite;
 }
 
 
 /* Theme Color */
-.theme_color_wraper{
+.theme_color_wraper {
     position: absolute;
     background: var(--bg-100);
     padding: 0.8rem 1.4rem;
@@ -1132,14 +1185,16 @@ section .section-header .section-title:after {
     transition: all 0.8s ease;
     z-index: 10;
     border: 2px solid var(--bg-50);
+    width: auto;
 }
-.theme_color_wraper.active{
+
+.theme_color_wraper.active {
     visibility: visible;
     opacity: 1;
     right: 100%;
 }
 
-.theme_color_wraper .title{
+.theme_color_wraper .title {
     font-size: 1.4rem;
     color: var(--text-900);
     font-weight: 700;
@@ -1148,6 +1203,7 @@ section .section-header .section-title:after {
     display: block;
     text-align: center;
 }
+
 .theme_color_wraper .color_list {
     display: flex;
     align-items: center;
@@ -1155,7 +1211,7 @@ section .section-header .section-title:after {
     width: 14rem;
 }
 
-.theme_color_wraper .color_list li{
+.theme_color_wraper .color_list li {
     width: 2rem;
     height: 2rem;
     display: inline-block;

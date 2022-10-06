@@ -119,5 +119,19 @@ $(document).ready(function () {
         });
 
     });
+
+    $('input, textarea').each(function (e) {
+        $(this).keyup(function () {
+            let value = $(this).val();
+
+            if (value !== '') {
+                $(this).parent('.input-box').addClass('active');
+            } else {
+                $(this).parent('.input-box').removeClass('active');
+            }
+        });
+    });
+
+
 });
 
