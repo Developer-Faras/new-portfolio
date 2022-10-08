@@ -400,6 +400,9 @@ section .section-header .section-title:after {
     padding: 1rem 1rem 0 1rem;
 }
 
+body.dark_mode_active .home .img-box img {
+    background: transparent;
+}
 
 
 .about .about-text {
@@ -1014,12 +1017,12 @@ section .section-header .section-title:after {
 
 .swiper-slide.swiper-slide-prev,
 .swiper-slide.swiper-slide-next {
-    background: var(--scrollbar-bg);
+    background: var(--bg-100);
     color: var(--text-700);
 }
 
 .swiper-slide.swiper-slide-active {
-    background: var(--scrollbar-bg);
+    background: var(--bg-100);
     padding: 2rem 3rem;
     border-radius: 6px;
     margin: 0 !important;
@@ -1062,7 +1065,36 @@ section .section-header .section-title:after {
 }
 
 
+/* Footer */
+.footer {
+    background: var(--bg-100);
+    height: 76px;
+}
 
+.footer .container {
+    padding: 0;
+    height: 100%;
+}
+
+.footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer .copy-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-900);
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+}
+
+.footer .copy-text a {
+    color: var(--text-700);
+    cursor: pointer;
+}
 
 
 
