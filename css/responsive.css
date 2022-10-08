@@ -1,6 +1,22 @@
 /* All Responsive Code Are Goes Haire */
 
 
+
+/* Up To 2100 px */
+@media (min-width: 2100px) {
+    html{
+        font-size: 22px;
+    }
+
+}
+
+/* Up To 1800 px */
+@media (min-width: 1800px) {
+    html{
+        font-size: 20px;
+    }
+
+}
 /* Up To 1500 px */
 @media (min-width: 1500px) {
     html{

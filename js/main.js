@@ -31,16 +31,16 @@ $(document).ready(function () {
             let theme_name = theme.toUpperCase();
 
             // color variable
-            let primary = "#ec1839";
-            let scroll_bg = "#ffd7dd";
+            let primary = "#0646d2";
+            let scroll_bg = "#bdd2ff";
 
 
             if (theme_name === "DEFAULT") {
-                primary = "#ec1839";
-                scroll_bg = "#ffd7dd";
-            } else if (theme_name === "BLUE") {
                 primary = "#0646d2";
                 scroll_bg = "#bdd2ff";
+            } else if (theme_name === "RED") {
+                primary = "#ec1839";
+                scroll_bg = "#ffd7dd";
             } else if (theme_name === "GREEN") {
                 primary = "#39a47b";
                 scroll_bg = "#c4e0d5";
@@ -132,6 +132,47 @@ $(document).ready(function () {
         });
     });
 
+    $('a').click(function (e) {
+        e.preventDefault();
+
+        console.log("Clicked An Anchor");
+    });
 
 });
 
+// Testimonials  Slider
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    initialSlide: 1,
+    loop: true,
+    speed: 300,
+    coverflowEffect: {
+        rotate: 70,
+        stretch: 3,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    },
+    // autoplay: {
+    //     delay: 2000,
+    // },
+});

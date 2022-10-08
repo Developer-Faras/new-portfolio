@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"  style="--skin-color: #ec1839; --scrollbar-bg: #ffd7dd;">
+<html lang="en" style="--skin-color: #0646d2; --scrollbar-bg: #bdd2ff;">
+
 <head>
     <!-- --text-700: #504e70; --text-900: #302c4d; --bg-50: #e8dfec; --bg-100: #fdf9ff; --bg-900: #f2f2fc;" -->
 
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,16 @@
     <!-- Link Icon -->
     <link rel="shortcut icon" href="./images/hero.png" type="image/x-icon">
 
+
+    <link rel="stylesheet" href="./lib/animate/animate.min.css">
+
+    <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+
+
     <!-- Link Main Style Sheet -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/responsive-2.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
 
@@ -21,16 +30,17 @@
 
 
 </head>
+
 <body>
     <div class="main-container">
-        
-        <div class="sidebar "> 
+
+        <div class="sidebar ">
             <div class="logo">
                 <a href="" class="logo-link"><span>F</span>aras</a>
             </div>
 
 
-            <ul class="nav navigation"> 
+            <ul class="nav navigation">
                 <li>
                     <a href="#" class="active">
                         <i class="fas fa-home"></i>
@@ -44,8 +54,20 @@
                 </li>
                 <li>
                     <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <i class="fa fa-list"></i>
                         <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-users"></i>
+                        <span>Review</span>
                     </a>
                 </li>
                 <li>
@@ -56,406 +78,444 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-receipt"></i>
-                        <span>Priching</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
                         <i class="fas fa-comment-alt"></i></i>
                         <span>Contact</span>
                     </a>
                 </li>
             </ul>
 
-            <ul class="sosial"> 
+            <ul class="sosial">
                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
                 <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fab fa-github-square"></i></a></li>
             </ul>
 
-        </div> <!--Sidebar-->
+        </div>
+        <!--Sidebar-->
 
-        <div class="main-content"> 
+        <div class="main-content">
 
-            <section class="section home hidden">
+            <section class="section home ">
                 <div class="container">
-                    <div class="row"> 
-                        <div class="text-box padd-15"> 
+                    <div class="row">
+                        <div class="text-box padd-15">
                             <h2 class="hi">Hello, my name is <br> <span class="name">Faras Uddin Rubel</span></h2>
                             <h3 class="profetion">I'm a <span class="typeing">Full Stack Web Developer</span></h3>
-                            <p class="description">I'm Mohammad Faras Uddin Rubel. Professional and passionate about Website Design & WordPress Development. I'm over 18 years old, and I'm never afraid to work. I'm skilled at clean code with HTML, CSS, Bootstrap CSS Framework, Materialize CSS frameworks, JavaScript and jQuery, PHP, MySQL. </p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <p class="description">I'm Mohammad Faras Uddin Rubel. Professional and passionate about
+                                Website Design & WordPress Development. I'm skilled at clean code with HTML, CSS,
+                                Bootstrap CSS Framework, Materialize CSS frameworks, JavaScript and jQuery, PHP, MySQL.
+                            </p>
+                            <a href="#contact" class=" btn-primary">Contact Me</a>
                         </div>
-                        <div class="img-box padd-15"> 
-                            <img src="./images/hero.png" alt="">
+                        <div class="img-box padd-15">
+                            <img src="./images/me.png" alt="">
                         </div>
                     </div>
                 </div>
-            </section> <!--Home-->
+            </section>
+            <!--Home-->
 
-            <section class="section about hidden"> 
-                <div class="container"> 
+            <section class="section about ">
+                <div class="container padd-15">
 
-                    <div class="row"> 
-                        <div class="section-header"> 
+                    <div class="row ">
+                        <div class="section-header">
                             <h2 class="section-title">About Me</h2>
                         </div>
                     </div>
 
-                    <div class="row"> 
-                        <div class="about-text"> 
+                    <div class="row ">
+                        <div class="about-text">
                             <h2 class="name">I'm Md Faras Uddin And <span class="profetion">Web Developer</span></h2>
-                            <p class="dec">Hello, 
-                                I'm Mohammad Faras Uddin Rubel. Professional and passionate about Website Design & WordPress Development. I'm over 18 years old, and I'm never afraid to work. I'm skilled at clean code with HTML, CSS, Bootstrap CSS Framework, Materialize CSS frameworks, JavaScript and jQuery, PHP, MySQL.  </p>
-                            <p class="dec">I have over than 2years of experience in the field of web development and already have completed more than 50 projects on WordPress website development. I believe in hard work and love to seek solutions. I always try to sleep after work and try to satisfy my clients because it is my profession. I respect my work very much. The client's solution and satisfaction is my main motive. 
-                                Thank You.  </p>
+                            <p class="dec">Hello,
+                                I'm Mohammad Faras Uddin Rubel. Professional and passionate about Website Design &
+                                WordPress Development. I'm over 18 years old, and I'm never afraid to work. I'm skilled
+                                at clean code with HTML, CSS, Bootstrap CSS Framework, Materialize CSS frameworks,
+                                JavaScript and jQuery, PHP, MySQL. </p>
+                            <p class="dec">I have over than 2years of experience in the field of web development and
+                                already have completed more than 50 projects on WordPress website development. I believe
+                                in hard work and love to seek solutions. I always try to sleep after work and try to
+                                satisfy my clients because it is my profession. I respect my work very much. The
+                                client's solution and satisfaction is my main motive.
+                                Thank You. </p>
                         </div>
                     </div>
 
-                    <div class="row"> 
-                        <div class="about-bio"> 
+                    <div class="row ">
+                        <div class="about-bio">
 
-                            <div class="left"> 
+                            <div class="left">
                                 <div class="bio-wraper">
-                                    <div class="bio-row"> 
-                                            <h4 class="bio">Birthday: <span class="result">11 Jan 2000</span></h4>
-            
-                                            <h4 class="bio">Website: <span class="result">www.farasuddin.ml</span></h4>
-            
-                                            <h4 class="bio">Degree: <span class="result">HSC</span></h4>
-            
-                                            <h4 class="bio">City: <span class="result">Dhaka</span></h4>
+                                    <div class="bio-row">
+                                        <h4 class="bio">Birthday: <span class="result">11 Jan 2000</span></h4>
+
+                                        <h4 class="bio">Website: <span class="result">www.farasuddin.ml</span></h4>
+
+                                        <h4 class="bio">Degree: <span class="result">HSC</span></h4>
+
+                                        <h4 class="bio">City: <span class="result">Dhaka</span></h4>
                                     </div>
-                                    <div class="bio-row"> 
+                                    <div class="bio-row">
                                         <h4 class="bio">Age: <span class="result">22</span></h4>
-                                        <h4 class="bio">Email: <span class="result">farasuddin.contact@gmail.com</span></h4>
+                                        <h4 class="bio">Email: <span class="result">farasuddin.contact@gmail.com</span>
+                                        </h4>
                                         <h4 class="bio">Phone: <span class="result">+880 1941 078639</span></h4>
                                         <h4 class="bio">Freelance: <span class="result">Available</span></h4>
                                     </div>
                                 </div>
-                                <div class="btn-wraper"> 
-                                    <a href="#" class="cv">Download CV</a>
-                                    <a href="#" class="hire">Hire Me</a>
+                                <div class="btn-wraper">
+                                    <a href="#" class="btn-primary">Download CV</a>
+                                    <a href="#" class="btn-secondary">Contact Me</a>
                                 </div>
                             </div>
 
-                            <div class="right"> 
-                                <div class="skill-wraper">
-                                     
-                                    <div class="skill"> 
-                                        <div class="text"> 
-                                            <h5 class="skill-name">Javascript</h5>
-                                            <h5 class="skill-parsent">90%</h5>
-                                        </div>
-                                        <div class="progress-bar"> 
-                                            <div class="progress" style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skill"> 
-                                        <div class="text"> 
-                                            <h5 class="skill-name">React Js</h5>
-                                            <h5 class="skill-parsent">90%</h5>
-                                        </div>
-                                        <div class="progress-bar"> 
-                                            <div class="progress" style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skill"> 
-                                        <div class="text"> 
-                                            <h5 class="skill-name">PHP</h5>
-                                            <h5 class="skill-parsent">90%</h5>
-                                        </div>
-                                        <div class="progress-bar"> 
-                                            <div class="progress" style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skill"> 
-                                        <div class="text"> 
-                                            <h5 class="skill-name">Laravel</h5>
-                                            <h5 class="skill-parsent">90%</h5>
-                                        </div>
-                                        <div class="progress-bar"> 
-                                            <div class="progress" style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skill"> 
-                                        <div class="text"> 
-                                            <h5 class="skill-name">Mysql</h5>
-                                            <h5 class="skill-parsent">90%</h5>
-                                        </div>
-                                        <div class="progress-bar"> 
-                                            <div class="progress" style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="row"> 
-                        <div class="another-skill"> 
-                            <div class="section-header"> 
+
+
+                    <div class="row edu-content ">
+                        <div class="education">
+                            <h3 class="title">Education</h3>
+
+                            <div class="row">
+                                <div class="timeline-box ">
+                                    <div class="timeline shadow-dark">
+
+                                        <!-- Timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h3 class="timeline-date">
+                                                <i class="fas fa-calendar"></i> 2013 - 2015
+                                            </h3>
+                                            <h4 class="timeline-title">Master In Computer Science</h4>
+                                            <p class="timeline-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam
+                                                error modi provident blanditiis distinctio ipsum alias, ab dolore fugit,
+                                                accusamus facilis totam quod tenetur?
+                                            </p>
+                                        </div>
+
+                                        <!-- Timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h3 class="timeline-date">
+                                                <i class="fas fa-calendar"></i> 2013 - 2015
+                                            </h3>
+                                            <h4 class="timeline-title">Master In Computer Science</h4>
+                                            <p class="timeline-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam
+                                                error modi provident blanditiis distinctio ipsum alias, ab dolore fugit,
+                                                accusamus facilis totam quod tenetur?
+                                            </p>
+                                        </div>
+
+                                        <!-- Timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h3 class="timeline-date">
+                                                <i class="fas fa-calendar"></i> 2013 - 2015
+                                            </h3>
+                                            <h4 class="timeline-title">Master In Computer Science</h4>
+                                            <p class="timeline-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam
+                                                error modi provident blanditiis distinctio ipsum alias, ab dolore fugit,
+                                                accusamus facilis totam quod tenetur?
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="experience">
+                            <h3 class="title">Experience</h3>
+
+                            <div class="row">
+                                <div class="timeline-box ">
+                                    <div class="timeline shadow-dark">
+
+                                        <!-- Timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h3 class="timeline-date">
+                                                <i class="fas fa-calendar"></i> 2013 - 2015
+                                            </h3>
+                                            <h4 class="timeline-title">Master In Computer Science</h4>
+                                            <p class="timeline-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam
+                                                error modi provident blanditiis distinctio ipsum alias, ab dolore fugit,
+                                                accusamus facilis totam quod tenetur?
+                                            </p>
+                                        </div>
+
+                                        <!-- Timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h3 class="timeline-date">
+                                                <i class="fas fa-calendar"></i> 2013 - 2015
+                                            </h3>
+                                            <h4 class="timeline-title">Master In Computer Science</h4>
+                                            <p class="timeline-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam
+                                                error modi provident blanditiis distinctio ipsum alias, ab dolore fugit,
+                                                accusamus facilis totam quod tenetur?
+                                            </p>
+                                        </div>
+
+                                        <!-- Timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h3 class="timeline-date">
+                                                <i class="fas fa-calendar"></i> 2013 - 2015
+                                            </h3>
+                                            <h4 class="timeline-title">Master In Computer Science</h4>
+                                            <p class="timeline-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam
+                                                error modi provident blanditiis distinctio ipsum alias, ab dolore fugit,
+                                                accusamus facilis totam quod tenetur?
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row skills">
+                        <div class="skills-wraper">
+                            <div class="section-header">
                                 <h2 class="section-title">Skills</h2>
                             </div>
 
+                            <div class="row skill-content">
+                                <div class="left wraper">
+                                    <h3 class="title">Core</h3>
 
-                             <div class="anothor-skill-wraper">
-                                <div class="row">
                                     <div class="skill-wraper">
-                                     
-                                        <div class="skill"> 
-                                            <div class="text"> 
+
+                                        <div class="skill">
+                                            <div class="text">
                                                 <h5 class="skill-name">Javascript</h5>
                                                 <h5 class="skill-parsent">90%</h5>
                                             </div>
-                                            <div class="progress-bar"> 
+                                            <div class="progress-bar">
                                                 <div class="progress" style="width: 90%;"></div>
                                             </div>
                                         </div>
-    
-                                        <div class="skill"> 
-                                            <div class="text"> 
+
+                                        <div class="skill">
+                                            <div class="text">
                                                 <h5 class="skill-name">React Js</h5>
                                                 <h5 class="skill-parsent">90%</h5>
                                             </div>
-                                            <div class="progress-bar"> 
+                                            <div class="progress-bar">
                                                 <div class="progress" style="width: 90%;"></div>
                                             </div>
                                         </div>
-    
-                                        <div class="skill"> 
-                                            <div class="text"> 
+
+                                        <div class="skill">
+                                            <div class="text">
                                                 <h5 class="skill-name">PHP</h5>
                                                 <h5 class="skill-parsent">90%</h5>
                                             </div>
-                                            <div class="progress-bar"> 
+                                            <div class="progress-bar">
                                                 <div class="progress" style="width: 90%;"></div>
                                             </div>
                                         </div>
-    
-                                        <div class="skill"> 
-                                            <div class="text"> 
+
+                                        <div class="skill">
+                                            <div class="text">
                                                 <h5 class="skill-name">Laravel</h5>
                                                 <h5 class="skill-parsent">90%</h5>
                                             </div>
-                                            <div class="progress-bar"> 
+                                            <div class="progress-bar">
                                                 <div class="progress" style="width: 90%;"></div>
                                             </div>
                                         </div>
-    
-                                        <div class="skill"> 
-                                            <div class="text"> 
+
+                                        <div class="skill">
+                                            <div class="text">
                                                 <h5 class="skill-name">Mysql</h5>
                                                 <h5 class="skill-parsent">90%</h5>
                                             </div>
-                                            <div class="progress-bar"> 
+                                            <div class="progress-bar">
                                                 <div class="progress" style="width: 90%;"></div>
                                             </div>
                                         </div>
-    
-    
-    
-                                    </div>
-                                    
-                                </div>
-                             </div>
 
-                        </div>
-                    </div>
 
-                    <div class="row edu-content"> 
-                        <div class="education padd-15">
-                            <h3 class="title">Education</h3>
-
-                            <div class="row"> 
-                                <div class="timeline-box "> 
-                                    <div class="timeline shadow-dark">
-                                        
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item"> 
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date"> 
-                                                <i class="fas fa-calendar"></i> 2013 - 2015
-                                            </h3>
-                                            <h4 class="timeline-title">Master In Computer Science</h4>
-                                            <p class="timeline-text"> 
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam error modi provident blanditiis distinctio ipsum alias, ab dolore fugit, accusamus facilis totam quod tenetur?
-                                            </p>
-                                        </div>
-                                        
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item"> 
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date"> 
-                                                <i class="fas fa-calendar"></i> 2013 - 2015
-                                            </h3>
-                                            <h4 class="timeline-title">Master In Computer Science</h4>
-                                            <p class="timeline-text"> 
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam error modi provident blanditiis distinctio ipsum alias, ab dolore fugit, accusamus facilis totam quod tenetur?
-                                            </p>
-                                        </div>
-                                        
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item"> 
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date"> 
-                                                <i class="fas fa-calendar"></i> 2013 - 2015
-                                            </h3>
-                                            <h4 class="timeline-title">Master In Computer Science</h4>
-                                            <p class="timeline-text"> 
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam error modi provident blanditiis distinctio ipsum alias, ab dolore fugit, accusamus facilis totam quod tenetur?
-                                            </p>
-                                        </div>
 
                                     </div>
                                 </div>
-                            </div>
 
-                        </div>
-                        <div class="experience padd-15">
-                            <h3 class="title">Experience</h3>
-                            
-                            <div class="row"> 
-                                <div class="timeline-box "> 
-                                    <div class="timeline shadow-dark">
-                                        
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item"> 
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date"> 
-                                                <i class="fas fa-calendar"></i> 2013 - 2015
-                                            </h3>
-                                            <h4 class="timeline-title">Master In Computer Science</h4>
-                                            <p class="timeline-text"> 
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam error modi provident blanditiis distinctio ipsum alias, ab dolore fugit, accusamus facilis totam quod tenetur?
-                                            </p>
+                                <div class="right wraper">
+                                    <h3 class="title">Another</h3>
+
+                                    <div class="skill-wraper">
+
+                                        <div class="skill">
+                                            <div class="text">
+                                                <h5 class="skill-name">Javascript</h5>
+                                                <h5 class="skill-parsent">90%</h5>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 90%;"></div>
+                                            </div>
                                         </div>
-                                        
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item"> 
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date"> 
-                                                <i class="fas fa-calendar"></i> 2013 - 2015
-                                            </h3>
-                                            <h4 class="timeline-title">Master In Computer Science</h4>
-                                            <p class="timeline-text"> 
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam error modi provident blanditiis distinctio ipsum alias, ab dolore fugit, accusamus facilis totam quod tenetur?
-                                            </p>
+
+                                        <div class="skill">
+                                            <div class="text">
+                                                <h5 class="skill-name">React Js</h5>
+                                                <h5 class="skill-parsent">90%</h5>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 90%;"></div>
+                                            </div>
                                         </div>
-                                        
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item"> 
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date"> 
-                                                <i class="fas fa-calendar"></i> 2013 - 2015
-                                            </h3>
-                                            <h4 class="timeline-title">Master In Computer Science</h4>
-                                            <p class="timeline-text"> 
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quam error modi provident blanditiis distinctio ipsum alias, ab dolore fugit, accusamus facilis totam quod tenetur?
-                                            </p>
+
+                                        <div class="skill">
+                                            <div class="text">
+                                                <h5 class="skill-name">PHP</h5>
+                                                <h5 class="skill-parsent">90%</h5>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 90%;"></div>
+                                            </div>
                                         </div>
+
+                                        <div class="skill">
+                                            <div class="text">
+                                                <h5 class="skill-name">Laravel</h5>
+                                                <h5 class="skill-parsent">90%</h5>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 90%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill">
+                                            <div class="text">
+                                                <h5 class="skill-name">Mysql</h5>
+                                                <h5 class="skill-parsent">90%</h5>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 90%;"></div>
+                                            </div>
+                                        </div>
+
+
 
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
+
+
+
                 </div>
             </section> <!-- About -->
 
-            <section class="section services hidden">
-                <div class="container"> 
-                    
-                    <div class="row"> 
-                        <div class="section-header"> 
+            <section class="section services ">
+                <div class="container padd-15">
+
+                    <div class="row">
+                        <div class="section-header">
                             <h2 class="section-title">Services</h2>
                         </div>
                     </div>
 
-                    <div class="row services-content "> 
+                    <div class="row services-content ">
 
-                        
-                        <div class="services-item"> 
-                            <div class="inner"> 
-                                <div class="icon-box"> 
+
+                        <div class="services-item">
+                            <div class="inner">
+                                <div class="icon-box">
                                     <i class="fas fa-code"></i>
                                 </div>
-                                <div class="text-box"> 
+                                <div class="text-box">
                                     <h3 class="title">Web Design</h3>
-                                    <p class="dec">I am a specialized in Front-end and Back-end website design. I Will Create Qualified Desine, ,Awesome And attractive Effects. It Will Catch On Visitors Eye.</p>
+                                    <p class="dec">I am a specialized in Front-end and Back-end website design. I Will
+                                        Create Qualified Desine, ,Awesome And attractive Effects. It Will Catch On
+                                        Visitors Eye.</p>
                                 </div>
                             </div>
                         </div> <!-- Services Item -->
 
-                        <div class="services-item"> 
-                            <div class="inner"> 
-                                <div class="icon-box"> 
+                        <div class="services-item">
+                            <div class="inner">
+                                <div class="icon-box">
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
-                                <div class="text-box"> 
+                                <div class="text-box">
                                     <h3 class="title">Responsive Design</h3>
-                                    <p class="dec">Responsive Web Design Which Supported On Any Resulation. It Will deliver an optimized website For Any Device Is That: PC, notebook, tablet, smart phone, etc</p>
+                                    <p class="dec">Responsive Web Design Which Supported On Any Resulation. It Will
+                                        deliver an optimized website For Any Device Is That: PC, notebook, tablet, smart
+                                        phone, etc</p>
                                 </div>
                             </div>
                         </div> <!-- Services Item -->
 
-                        <div class="services-item"> 
-                            <div class="inner"> 
-                                <div class="icon-box"> 
+                        <div class="services-item">
+                            <div class="inner">
+                                <div class="icon-box">
                                     <i class="fas fa-laptop-code"></i>
                                 </div>
-                                <div class="text-box"> 
+                                <div class="text-box">
                                     <h3 class="title">Web Cloning</h3>
-                                    <p class="dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quibusdam, dignissimos ullam eaque illum reprehenderit facere nihil quam illo?</p>
+                                    <p class="dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+                                        unde quibusdam, dignissimos ullam eaque illum reprehenderit facere nihil quam
+                                        illo?</p>
                                 </div>
                             </div>
                         </div> <!-- Services Item -->
 
 
-                        <div class="services-item"> 
-                            <div class="inner"> 
-                                <div class="icon-box"> 
+                        <div class="services-item">
+                            <div class="inner">
+                                <div class="icon-box">
                                     <i class="fas fa-database"></i>
                                 </div>
-                                <div class="text-box"> 
+                                <div class="text-box">
                                     <h3 class="title">Web Development</h3>
-                                    <p class="dec">need a dynamic, database-driven website or a fully functioning e-commerce website, I have the creative talent to accommodate your web application development needs</p>
+                                    <p class="dec">need a dynamic, database-driven website or a fully functioning
+                                        e-commerce website, I have the creative talent to accommodate your web
+                                        application development needs</p>
                                 </div>
                             </div>
                         </div> <!-- Services Item -->
 
 
-                        <div class="services-item"> 
-                            <div class="inner"> 
-                                <div class="icon-box"> 
+                        <div class="services-item">
+                            <div class="inner">
+                                <div class="icon-box">
                                     <i class="fas fa-shopping-cart"></i>
                                 </div>
-                                <div class="text-box"> 
+                                <div class="text-box">
                                     <h3 class="title">E-Commerce</h3>
-                                    <p class="dec">If you want to setup a shop or establish your business and sell your products online, I am ready to make your needs. I provide complete e-commerce solutions for you.</p>
+                                    <p class="dec">If you want to setup a shop or establish your business and sell your
+                                        products online, I am ready to make your needs. I provide complete e-commerce
+                                        solutions for you.</p>
                                 </div>
                             </div>
                         </div> <!-- Services Item -->
 
 
-                        <div class="services-item"> 
-                            <div class="inner"> 
-                                <div class="icon-box"> 
+                        <div class="services-item">
+                            <div class="inner">
+                                <div class="icon-box">
                                     <i class="fab fa-wordpress-simple"></i>
                                 </div>
-                                <div class="text-box"> 
+                                <div class="text-box">
                                     <h3 class="title">Wordpress</h3>
-                                    <p class="dec">Wordpress, Joomla, E-commarce Template, Portfollio Template, Buisness Template, Wordpress Theme Customization, Wordpress Theme Devolopment etc.</p>
+                                    <p class="dec">Wordpress, Joomla, E-commarce Template, Portfollio Template, Buisness
+                                        Template, Wordpress Theme Customization, Wordpress Theme Devolopment etc.</p>
                                 </div>
                             </div>
                         </div> <!-- Services Item -->
@@ -466,11 +526,66 @@
                 </div>
             </section> <!-- Services -->
 
-            <section class="section portfolio hidden"> 
-                <div class="container">
-                    
-                    <div class="row"> 
-                        <div class="section-header"> 
+            <section class="section testimonials">
+                <div class="container padd-15">
+                    <div class="row">
+                        <div class="section-header">
+                            <h2 class="section-title">Testimonials</h2>
+                        </div>
+                    </div>
+
+                    <div class="row slider">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <h5 class="name">Mr. Jhon</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                                            reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
+                                            nulla
+                                            unde. Labore dolores facere esse, veritatis ab possimus voluptates commodi
+                                            distinctio?</p>
+                                    </div>
+                                </div> <!-- Slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <h5 class="name">Mr. Jhon</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                                            reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
+                                            nulla
+                                            unde. Labore dolores facere esse, veritatis ab possimus voluptates commodi
+                                            distinctio?</p>
+                                    </div>
+                                </div> <!-- Slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <h5 class="name">Mr. Jhon</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                                            reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
+                                            nulla
+                                            unde. Labore dolores facere esse, veritatis ab possimus voluptates commodi
+                                            distinctio?</p>
+                                    </div>
+                                </div> <!-- Slide -->
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section> <!-- Testimonils -->
+
+            <section class="section portfolio ">
+                <div class="container padd-15">
+
+                    <div class="row">
+                        <div class="section-header">
                             <h2 class="section-title">Portfolio</h2>
                         </div>
                     </div>
@@ -479,11 +594,11 @@
 
                     <div class="row portfolio-content">
 
-                        <div class="item portfolio-item"> 
-                            <div class="img-box"> 
+                        <div class="item portfolio-item">
+                            <div class="img-box">
                                 <img src="./images/portfolio/portfolio-1.jpg" alt="">
                             </div>
-                            <div class="text-box"> 
+                            <div class="text-box">
                                 <h4 class="title">React Country App</h4>
                                 <p class="desc">Simple React Projects | React Api Project</p>
                                 <ul class="usages">
@@ -493,18 +608,20 @@
                                     <li class="list-item">Javascript</li>
                                     <li class="list-item">React Js</li>
                                 </ul>
-                                <div class="btn-box"> 
-                                    <a href="#" class="link github" title="View In Github"><i class="fab fa-github"></i><span class="text">View Github</span></a>
-                                    <a href="#" class="link live" title="View Live Demo"><i class="fas fa-eye"></i><span class="text">View Live</span></a>
+                                <div class="btn-box">
+                                    <a href="#" class="link btn-secondary" title="View In Github"><i
+                                            class="fab fa-github"></i><span class="text">View Github</span></a>
+                                    <a href="#" class="link btn-secondary" title="View Live Demo"><i
+                                            class="fas fa-eye"></i><span class="text">View Live</span></a>
                                 </div>
                             </div>
                         </div> <!-- Portfolio Item -->
 
-                        <div class="item portfolio-item"> 
-                            <div class="img-box"> 
+                        <div class="item portfolio-item">
+                            <div class="img-box">
                                 <img src="./images/portfolio/portfolio-2.jpg" alt="">
                             </div>
-                            <div class="text-box"> 
+                            <div class="text-box">
                                 <h4 class="title">React Country App</h4>
                                 <p class="desc">Simple React Projects | React Api Project</p>
                                 <ul class="usages">
@@ -514,18 +631,20 @@
                                     <li class="list-item">Javascript</li>
                                     <li class="list-item">React Js</li>
                                 </ul>
-                                <div class="btn-box"> 
-                                    <a href="#" class="link github" title="View In Github"><i class="fab fa-github"></i><span class="text">View Github</span></a>
-                                    <a href="#" class="link live" title="View Live Demo"><i class="fas fa-eye"></i><span class="text">View Live</span></a>
+                                <div class="btn-box">
+                                    <a href="#" class="link btn-secondary" title="View In Github"><i
+                                            class="fab fa-github"></i><span class="text">View Github</span></a>
+                                    <a href="#" class="link btn-secondary" title="View Live Demo"><i
+                                            class="fas fa-eye"></i><span class="text">View Live</span></a>
                                 </div>
                             </div>
                         </div> <!-- Portfolio Item -->
 
-                        <div class="item portfolio-item"> 
-                            <div class="img-box"> 
+                        <div class="item portfolio-item">
+                            <div class="img-box">
                                 <img src="./images/portfolio/portfolio-3.jpg" alt="">
                             </div>
-                            <div class="text-box"> 
+                            <div class="text-box">
                                 <h4 class="title">React Country App</h4>
                                 <p class="desc">Simple React Projects | React Api Project</p>
                                 <ul class="usages">
@@ -535,18 +654,20 @@
                                     <li class="list-item">Javascript</li>
                                     <li class="list-item">React Js</li>
                                 </ul>
-                                <div class="btn-box"> 
-                                    <a href="#" class="link github" title="View In Github"><i class="fab fa-github"></i><span class="text">View Github</span></a>
-                                    <a href="#" class="link live" title="View Live Demo"><i class="fas fa-eye"></i><span class="text">View Live</span></a>
+                                <div class="btn-box">
+                                    <a href="#" class="link btn-secondary" title="View In Github"><i
+                                            class="fab fa-github"></i><span class="text">View Github</span></a>
+                                    <a href="#" class="link btn-secondary" title="View Live Demo"><i
+                                            class="fas fa-eye"></i><span class="text">View Live</span></a>
                                 </div>
                             </div>
                         </div> <!-- Portfolio Item -->
 
-                        <div class="item portfolio-item"> 
-                            <div class="img-box"> 
+                        <div class="item portfolio-item">
+                            <div class="img-box">
                                 <img src="./images/portfolio/portfolio-4.jpg" alt="">
                             </div>
-                            <div class="text-box"> 
+                            <div class="text-box">
                                 <h4 class="title">React Country App</h4>
                                 <p class="desc">Simple React Projects | React Api Project</p>
                                 <ul class="usages">
@@ -556,18 +677,20 @@
                                     <li class="list-item">Javascript</li>
                                     <li class="list-item">React Js</li>
                                 </ul>
-                                <div class="btn-box"> 
-                                    <a href="#" class="link github" title="View In Github"><i class="fab fa-github"></i><span class="text">View Github</span></a>
-                                    <a href="#" class="link live" title="View Live Demo"><i class="fas fa-eye"></i><span class="text">View Live</span></a>
+                                <div class="btn-box">
+                                    <a href="#" class="link btn-secondary" title="View In Github"><i
+                                            class="fab fa-github"></i><span class="text">View Github</span></a>
+                                    <a href="#" class="link btn-secondary" title="View Live Demo"><i
+                                            class="fas fa-eye"></i><span class="text">View Live</span></a>
                                 </div>
                             </div>
                         </div> <!-- Portfolio Item -->
 
-                        <div class="item portfolio-item"> 
-                            <div class="img-box"> 
+                        <div class="item portfolio-item">
+                            <div class="img-box">
                                 <img src="./images/portfolio/portfolio-5.jpg" alt="">
                             </div>
-                            <div class="text-box"> 
+                            <div class="text-box">
                                 <h4 class="title">React Country App</h4>
                                 <p class="desc">Simple React Projects | React Api Project</p>
                                 <ul class="usages">
@@ -577,18 +700,20 @@
                                     <li class="list-item">Javascript</li>
                                     <li class="list-item">React Js</li>
                                 </ul>
-                                <div class="btn-box"> 
-                                    <a href="#" class="link github" title="View In Github"><i class="fab fa-github"></i><span class="text">View Github</span></a>
-                                    <a href="#" class="link live" title="View Live Demo"><i class="fas fa-eye"></i><span class="text">View Live</span></a>
+                                <div class="btn-box">
+                                    <a href="#" class="link btn-secondary" title="View In Github"><i
+                                            class="fab fa-github"></i><span class="text">View Github</span></a>
+                                    <a href="#" class="link btn-secondary" title="View Live Demo"><i
+                                            class="fas fa-eye"></i><span class="text">View Live</span></a>
                                 </div>
                             </div>
                         </div> <!-- Portfolio Item -->
 
-                        <div class="item portfolio-item"> 
-                            <div class="img-box"> 
+                        <div class="item portfolio-item">
+                            <div class="img-box">
                                 <img src="./images/portfolio/portfolio-6.jpg" alt="">
                             </div>
-                            <div class="text-box"> 
+                            <div class="text-box">
                                 <h4 class="title">React Country App</h4>
                                 <p class="desc">Simple React Projects | React Api Project</p>
                                 <ul class="usages">
@@ -598,9 +723,11 @@
                                     <li class="list-item">Javascript</li>
                                     <li class="list-item">React Js</li>
                                 </ul>
-                                <div class="btn-box"> 
-                                    <a href="#" class="link github" title="View In Github"><i class="fab fa-github"></i><span class="text">View Github</span></a>
-                                    <a href="#" class="link live" title="View Live Demo"><i class="fas fa-eye"></i><span class="text">View Live</span></a>
+                                <div class="btn-box">
+                                    <a href="#" class="link btn-secondary" title="View In Github"><i
+                                            class="fab fa-github"></i><span class="text">View Github</span></a>
+                                    <a href="#" class="link btn-secondary" title="View Live Demo"><i
+                                            class="fas fa-eye"></i><span class="text">View Live</span></a>
                                 </div>
                             </div>
                         </div> <!-- Portfolio Item -->
@@ -609,26 +736,26 @@
                 </div>
             </section> <!-- Portfolio -->
 
-            <section class="section contact"> 
-                <div class="container"> 
-                    
-                    <div class="row"> 
-                        <div class="section-header"> 
+            <section class="section contact">
+                <div class="container padd-15">
+
+                    <div class="row">
+                        <div class="section-header">
                             <h2 class="section-title">Contact Me</h2>
                         </div>
                     </div>
 
-                    <div class="row extra-title"> 
-                        <div class="extra-content"> 
+                    <div class="row extra-title">
+                        <div class="extra-content">
                             <h3 class="title">Have Any Question ?</h3>
                             <p class="dec">I'm For Your Services</p>
                         </div>
                     </div>
 
-                    <div class="row box-content"> 
+                    <div class="row box-content">
 
-                        <a href="Tel: +8801903221624" class="box"> 
-                            <div class="icon-box"> 
+                        <a href="Tel: +8801903221624" class="box">
+                            <div class="icon-box">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="text-box">
@@ -638,8 +765,8 @@
                         </a> <!-- Box -->
 
 
-                        <a href="mailto:farasuddin.contact@gmail.com" class="box"> 
-                            <div class="icon-box"> 
+                        <a href="mailto:farasuddin.contact@gmail.com" class="box">
+                            <div class="icon-box">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="text-box">
@@ -648,8 +775,8 @@
                             </div>
                         </a> <!-- Box -->
 
-                        <a target="_blank" href="https://maps.google.com" class="box"> 
-                            <div class="icon-box"> 
+                        <a target="_blank" href="https://maps.google.com" class="box">
+                            <div class="icon-box">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="text-box">
@@ -659,8 +786,8 @@
                         </a> <!-- Box -->
 
 
-                        <a href="http://www.farasuddin.ml" class="box"> 
-                            <div class="icon-box"> 
+                        <a href="http://www.farasuddin.ml" class="box">
+                            <div class="icon-box">
                                 <i class="fas fa-globe"></i>
                             </div>
                             <div class="text-box">
@@ -671,17 +798,17 @@
 
                     </div>
 
-                    <div class="row extra-title"> 
-                        <div class="extra-content"> 
+                    <div class="row extra-title">
+                        <div class="extra-content">
                             <h3 class="title">Send Me An Email</h3>
                             <p class="dec">I'm Very Responsive For Your Message</p>
                         </div>
                     </div>
 
-                    <div class="row form-content"> 
+                    <div class="row form-content">
                         <form action="#">
 
-                            <div class="row"> 
+                            <div class="row">
                                 <div class="input-box">
                                     <input type="text" name="name" id="name" placeholder="Enter Your Name...">
                                     <i class="fas fa-user"></i>
@@ -691,9 +818,9 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                             </div>
-                            
 
-                            <div class="row"> 
+
+                            <div class="row">
                                 <div class="input-box">
                                     <input type="text" name="phone" id="phone" placeholder="Enter Your Phone...">
                                     <i class="fas fa-phone-alt"></i>
@@ -704,17 +831,18 @@
                                 </div>
                             </div>
 
-                            <div class="row message"> 
-                                <div class="input-box "> 
-                                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter Your Message..."></textarea>
+                            <div class="row message">
+                                <div class="input-box ">
+                                    <textarea name="comment" id="comment" cols="30" rows="10"
+                                        placeholder="Enter Your Message..."></textarea>
                                     <i class="fas fa-comment-alt"></i>
                                 </div>
                             </div>
 
-                            <div class="row btn-row"> 
-                                <div class="input-box"> 
-                                    <button type="submit">Send Message</button>
-                                    <button type="reset">Reset Form</button>
+                            <div class="row btn-row">
+                                <div class="input-box">
+                                    <button type="submit" class="btn-primary">Send Message</button>
+                                    <button type="reset" class="btn-secondary">Reset Form</button>
                                 </div>
                             </div>
 
@@ -730,7 +858,7 @@
         <!-- Nav Toggler -->
         <div class="fixed_content">
 
-            <div class="nav-toggler"> 
+            <div class="nav-toggler">
                 <span></span>
             </div>
 
@@ -744,24 +872,28 @@
 
             <div class="theme_color_wraper">
                 <h5 class="title">Theme Color</h5>
-    
+
                 <ul class="color_list">
-                    <li class="theme_color" theme_name="default" style="background: #ec1839;"></li>
-                    <li class="theme_color" theme_name="blue" style="background: #0646d2;"></li>
+                    <li class="theme_color" theme_name="default" style="background: #0646d2;"></li>
+                    <li class="theme_color" theme_name="red" style="background: #ec1839;"></li>
                     <li class="theme_color" theme_name="green" style="background:#39a47b;"></li>
                     <li class="theme_color" theme_name="pink" style="background:#f618b4;"></li>
                     <li class="theme_color" theme_name="orange" style="background: #ff3b19;"></li>
                 </ul>
             </div>
         </div>
-        
-       
-        
+
+
+
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <script src="./lib/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./lib/jquery/jquery-3.6.0.min.js"></script>
     <script src="./js/progress.js"></script>
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>
