@@ -4,7 +4,7 @@ $(document).ready(function () {
         $(this).toggleClass('mobile_active');
         $('.sidebar').toggleClass('mobile_active');
         $('.fixed_content').toggleClass('nav_active');
-
+        $('.mobile_menu_overlay').toggleClass('nav_active');
     });
 
 
@@ -162,12 +162,12 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         // when window width is >= 320px
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20
+        100: {
+            slidesPerView: 1,
+            spaceBetween: 30,
         },
         // when window width is >= 640px
-        640: {
+        900: {
             slidesPerView: 2,
             spaceBetween: 20
         }

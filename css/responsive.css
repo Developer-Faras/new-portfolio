@@ -1,35 +1,25 @@
 /* All Responsive Code Are Goes Haire */
 
-/* Up To 1500 px */
+/* Up To 1500 px Up To Desktop */
 @media (min-width: 1500px) {
     html {
-        font-size: 18px;
+        font-size: 20px;
     }
 
+    .container {
+        max-width: 1300px;
+    }
 }
 
-/* 1300 - 1500*/
+/* 1300 - 1500 Desktop */
 @media (max-width: 1499px) {
     html {
         font-size: 16px;
     }
 }
 
-/* 1200 - 1300 */
-@media (max-width: 1299px) {
-    html {
-        font-size: 14px;
-    }
-}
 
-/* 1100 - 1200 */
-@media (max-width: 1199px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-/* 1000 - 1100 */
+/* 1000 - 1100 Learge Laptop */
 @media (max-width: 1099px) {
     html {
         font-size: 13px;
@@ -46,15 +36,13 @@
     }
 
     /* Services */
-    .services .services-item .inner {
-        border: 2px solid var(--bg-50);
-    }
+    .services .services-item .inner {}
 }
 
-/* 900 - 1000 */
+/* 900 - 1000 Midium Laptop */
 @media (max-width: 999px) {
     html {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     section .container {
@@ -68,25 +56,21 @@
         max-width: 98%;
     }
 
-    .home .img-box:before,
-    .home .img-box:after {
-        display: none;
-    }
-
     .home .text-box {
         flex: 0 0 98%;
         max-width: 98%;
-        min-height: 94vh;
-        text-align: center;
+        min-height: 620px;
+        text-align: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: self-start;
     }
 
     .home .img-box img {
         height: auto;
         border-radius: 3px;
+        width: 100%;
     }
 
     /* About */
@@ -113,8 +97,8 @@
 
     /* Services */
     .services .services-item {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 48%;
+        max-width: 48%;
     }
 
     /* Portfolio */
@@ -146,10 +130,10 @@
     }
 }
 
-/* 800 - 900 */
+/* 800 - 900 Small Laptop */
 @media (max-width: 899px) {
     html {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /* Sidebar */
@@ -191,8 +175,8 @@
     }
 
     .services .services-item {
-        flex: 0 0 80%;
-        max-width: 80%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     /* Portfolio */
@@ -212,7 +196,7 @@
 /* Below To 700 */
 @media (max-width: 800px) {
     html {
-        font-size: 13px;
+        font-size: 15px;
     }
 
 
@@ -234,46 +218,32 @@
 
     /* Mobile Nav Design */
     .sidebar {
-        background: var(--bg-100);
-        width: 80%;
-        height: 170px;
-        bottom: -180px;
-        left: 50%;
-        right: 0;
-        top: auto;
-        flex-direction: row;
-        transform: translate(-50%, 0);
-        border-radius: 10px 10px 0 0;
-        transition: all 1s ease;
-        border: 4px solid var(--bg-50);
-        box-shadow: none;
-        opacity: 0;
-        z-index: 500;
+        top: 0;
+        left: -24rem;
+        bottom: 0;
+        width: 22rem;
+        z-index: 100;
+        transition: all 0.6s ease;
     }
 
     .sidebar.mobile_active {
-        box-shadow: 0px 0px 40px -4px rgba(0, 0, 0, 0.3);
-        bottom: 10px;
+        left: 0;
+    }
+
+
+    .sidebar.mobile_active {
         opacity: 1;
+        left: 0;
     }
 
     /* Logo */
     .sidebar .logo {
         position: relative;
-        font-size: 1.5rem;
-        font-weight: 600;
-        top: 0;
-        left: 10px;
+        top: 20px;
     }
 
-    .sidebar .logo a {
-        writing-mode: tb-rl;
-        padding: 0;
-        position: static;
-    }
 
     .sidebar .logo a:hover {
-        padding: 0px;
         color: var(--skin-color);
     }
 
@@ -284,76 +254,31 @@
 
     .sidebar .nav {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 0;
+        width: 100%;
     }
 
     .sidebar .nav li {
-        margin: 0 10px;
-        cursor: pointer;
+        width: 70%;
+        text-align: center;
+        margin-bottom: 1.2rem;
     }
 
     .sidebar .nav li a {
-        font-size: 1.2rem;
-        border: 2px solid var(--bg-50);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px 8px;
-        border-radius: 4px;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .sidebar .nav li a i {
-        margin: 0;
-    }
-
-    .sidebar .nav li a span {
-        display: none;
-        position: absolute;
-        bottom: 140%;
-        background: var(--text-700);
-        color: #fff;
-        padding: 0.3rem 0.8rem;
-        align-items: center;
-        justify-content: center;
-        border-radius: 2px;
-        transition: all 0.3s ease;
-    }
-
-    .sidebar .nav li a span::before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background: var(--text-700);
-        bottom: -11%;
-        transform: rotate(45deg);
-    }
-
-    .sidebar .nav li a:hover span {
-        display: flex;
+        font-size: 1.1rem;
     }
 
     /* Sosial */
-    .sidebar .sosial {
-        position: relative;
-        bottom: auto;
-        display: block;
-        right: 16px;
-    }
-
-
-    .sidebar .sosial li {
-        display: block;
-        margin: 2px 0px;
+    .sidebar .sosial li a {
+        font-size: 1.7rem;
     }
 
     .fixed_content {
         position: fixed;
-        bottom: 20px;
+        bottom: 10px;
         left: 20px;
         z-index: 600;
         top: auto;
@@ -374,62 +299,26 @@
 }
 
 /* Below To 600 */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    /* Sidebar */
-    .sidebar {
-        display: block;
-        width: 60px;
-        left: 0px;
-        bottom: 20px;
-        height: auto;
-        opacity: 0;
-        border: 2px solid var(--bg-50);
-        visibility: hidden;
+    .about .skill-content .wraper {
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 
-    .sidebar.mobile_active {
-        left: 40px;
-        opacity: 1;
-        bottom: 10px;
-        visibility: visible;
+    .about .skill-content .wraper:first-child {
+        margin-bottom: 3rem;
     }
 
-    .sidebar .logo {
-        display: none;
+    .contact .form-content .row .input-box {
+        flex: 0 0 100%;
     }
 
-    .sidebar .nav {
-        margin: 0 auto;
-        flex-direction: column;
-    }
-
-    .sidebar .nav li {
-        width: 42px;
-        margin-bottom: 0.8rem;
-    }
-
-    .sidebar .nav li a {
-        font-size: 1.6rem;
-        width: 100%;
-    }
-
-    .sidebar .sosial {
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .sidebar .sosial li a {
-        font-size: 1.8rem;
-    }
-
-    .fixed_content.nav_active {
-        left: 80px;
+    .contact .container {
+        padding-bottom: 1.5rem;
     }
 }
 
