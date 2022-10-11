@@ -59,7 +59,7 @@
     .home .text-box {
         flex: 0 0 98%;
         max-width: 98%;
-        min-height: 620px;
+        min-height: 39rem;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -101,40 +101,10 @@
         max-width: 48%;
     }
 
-    /* Portfolio */
-    .portfolio .portfolio-item .text-box .title {
-        font-size: 1.75rem;
-        word-spacing: 4px;
-    }
-
-    .portfolio .portfolio-item .text-box .desc {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        margin-top: 0.2rem;
-    }
-
-    .portfolio .portfolio-item .text-box .usages {
-        width: 80%;
-        margin-bottom: 1rem;
-        display: none;
-    }
-
-    .portfolio .portfolio-item .text-box .btn-box {
-        display: block;
-        width: 90%;
-    }
-
-    .portfolio .portfolio-item .text-box a.link {
-        margin: 0.8rem 0rem;
-    }
 }
 
 /* 800 - 900 Small Laptop */
 @media (max-width: 899px) {
-    html {
-        font-size: 15px;
-    }
 
     /* Sidebar */
     .sidebar {
@@ -195,13 +165,11 @@
 
 /* Below To 700 */
 @media (max-width: 800px) {
-    html {
-        font-size: 15px;
-    }
 
 
     .main-content {
         left: 0px;
+        overflow-x: hidden;
     }
 
 
@@ -304,6 +272,17 @@
         font-size: 14px;
     }
 
+    .about .about-bio .left .bio-wraper {
+        flex-direction: column;
+    }
+
+    .about .about-bio .left .bio-wraper .bio-row {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .about .skill-content .wraper {
         max-width: 100%;
         flex: 0 0 100%;
@@ -325,7 +304,35 @@
 /* Below To 500 */
 @media (max-width: 500px) {
     html {
-        font-size: 11px;
+        font-size: 13px;
+    }
+
+    /* .home .text-box {
+        min-height: 560px;
+    } */
+
+    .home .text-box .hi {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .home .text-box .hi .name {
+        font-size: 2.5rem;
+    }
+
+    .home .text-box .profetion {
+        font-size: 1.3rem;
+    }
+
+    .home .text-box .description {
+        line-height: 1.8rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about .about-bio .left .btn-wraper a {
+        margin-right: 0.5rem;
     }
 
     /* Services */
@@ -338,24 +345,91 @@
 /* Below To 400 */
 @media (max-width: 400px) {
     html {
-        font-size: 10px;
+        font-size: 13px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.8rem 1.4rem;
+    }
+
+    .sidebar {
+        width: 18rem;
+    }
+
+    .home .text-box .hi .name {
+        font-size: 2rem;
+    }
+
+    .about .about-bio .left .btn-wraper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* .about .about-bio .left .btn-wraper a {
+        margin-right: 0;
+        padding: 0.6rem 2rem;
+    } */
+
+    .fixed_content.nav_active {
+        left: 20rem;
+    }
+
+    .contact .box-content .box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfolio-item .text-box {
+        padding: 1rem;
+    }
+
+    .portfolio .portfolio-item .text-box .usages {
+        display: none;
+    }
+
+    .portfolio .portfolio-item .text-box .btn-box {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .portfolio .portfolio-item .text-box a.link {
+        margin: 0;
+        padding: 0.5rem 0.7rem;
+        margin-right: 0;
+        font-size: 0.9rem;
     }
 }
 
 /* Below To 350 */
 @media (max-width: 350px) {
     html {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     section {
-        padding: 0 20px;
+        padding: 0 0px;
     }
 
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.8rem 1.2rem;
+    }
 
     .home .text-box .hi .name {
         color: var(--skin-color);
         font-size: 2.6rem;
+    }
+
+    .about .about-bio .left .btn-wraper a {
+        margin-right: 0;
+        padding: 0.6rem 1.4rem;
+    }
+
+    .portfolio .portfolio-item .text-box a.link {
+        padding: 0.4rem;
+        margin-right: 0;
     }
 
     /* CContact */
@@ -375,12 +449,17 @@
         padding: 1rem 0.6rem;
         font-size: 1rem;
     }
+
+    .fixed_content {
+        bottom: -36px;
+        left: 4px;
+    }
 }
 
 /* Below To 250 */
 @media (max-width: 250px) {
     html {
-        font-size: 8px;
+        font-size: 11px;
     }
 
     section {
@@ -396,5 +475,21 @@
 
     section {
         padding: 0;
+    }
+}
+
+
+
+
+/* Height Responsive */
+@media (max-height: 480px) {
+    .sidebar .logo {
+        display: none;
+    }
+}
+
+@media (max-height: 400px) {
+    .sidebar .sosial {
+        bottom: 0rem;
     }
 }

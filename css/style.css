@@ -335,7 +335,7 @@ section .section-header .section-title:after {
 /* Sections Design */
 .home {
     /* min-height: 100vh; */
-    min-height: 750px;
+    min-height: 45rem;
     display: flex;
     background: var(--bg-900);
     align-items: center;
@@ -666,6 +666,7 @@ body.dark_mode_active .home .img-box img {
     border-radius: 10px;
     text-align: center;
     transition: all 0.2s ease;
+    height: 100%;
 }
 
 .services .services-item:hover {
@@ -763,9 +764,9 @@ body.dark_mode_active .home .img-box img {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.65);
-    padding: 1rem;
+    padding: 0 2rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     z-index: 1000;
@@ -780,38 +781,37 @@ body.dark_mode_active .home .img-box img {
 }
 
 .portfolio .portfolio-item .text-box .title {
-    font-size: 2.125rem;
+    font-size: 1.75rem;
     color: #fff;
     font-weight: 800;
     word-spacing: 6px;
 }
 
 .portfolio .portfolio-item .text-box .desc {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #fff;
     font-weight: 500;
-    margin-bottom: 0.8rem;
 }
 
 .portfolio .portfolio-item .text-box .usages {
     display: block;
     text-align: left;
     color: #fff;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     width: 66%;
     list-style: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     box-sizing: border-box;
 }
 
 .portfolio .portfolio-item .text-box .usages .list-title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 800;
     margin-bottom: 0.2rem;
 }
 
 .portfolio .portfolio-item .text-box .usages .list-item {
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: 20px;
     padding: 0.1rem 0;
@@ -822,12 +822,14 @@ body.dark_mode_active .home .img-box img {
 .portfolio .portfolio-item .text-box .btn-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .portfolio .portfolio-item .text-box a.link {
-    margin: 0 1rem;
-    padding: 0.8rem 1.2rem;
+    margin: 0;
+    padding: 0.7rem 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
 }
 
 
@@ -1079,7 +1081,7 @@ body.dark_mode_active .home .img-box img {
 /* Footer */
 .footer {
     background: var(--bg-100);
-    height: 76px;
+    height: 4rem;
 }
 
 .footer .container {
@@ -1115,7 +1117,7 @@ body.dark_mode_active .home .img-box img {
     top: 40px;
     right: 50px;
     z-index: 600;
-    width: 44px;
+    width: 3rem;
     height: 150px;
     transition: all 0.8s ease;
 }
@@ -1124,8 +1126,8 @@ body.dark_mode_active .home .img-box img {
 
 /* Nav Toggler Design */
 .nav-toggler {
-    width: 44px;
-    height: 40px;
+    width: 3rem;
+    height: 2.8rem;
     border: 3px solid var(--bg-50);
     cursor: pointer;
     background: var(--bg-100);
@@ -1140,20 +1142,20 @@ body.dark_mode_active .home .img-box img {
 
 .nav-toggler span {
     display: inline-block;
-    width: 24px;
-    height: 3px;
+    width: 1.5rem;
+    height: 0.2rem;
     background: var(--skin-color);
     position: absolute;
-    top: 16px;
-    left: 7px;
+    top: 1rem;
+    left: 0.6rem;
     transition: all 0.4s ease;
 }
 
 .nav-toggler span::before,
 .nav-toggler span::after {
     content: '';
-    width: 24px;
-    height: 3px;
+    width: 1.5rem;
+    height: 0.2rem;
     background: var(--skin-color);
     position: absolute;
     left: 0px;
@@ -1197,8 +1199,8 @@ body.dark_mode_active .home .img-box img {
     border: 3px solid var(--bg-50);
     margin: 0.4rem auto;
     border-radius: 4px;
-    width: 44px;
-    height: 44px;
+    width: 3rem;
+    height: 2.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
