@@ -86,6 +86,7 @@ img {
 
 section {
     padding: 0 15px;
+    min-height: calc(100vh - 4rem);
 }
 
 section .container {
@@ -319,6 +320,7 @@ section .section-header .section-title:after {
     bottom: 0;
     left: 16.50rem;
     z-index: -1;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
@@ -334,8 +336,8 @@ section .section-header .section-title:after {
 
 /* Sections Design */
 .home {
-    /* min-height: 100vh; */
-    min-height: 45rem;
+    min-height: calc(100vh - 4rem);
+    /* min-height: 45rem; */
     display: flex;
     background: var(--bg-900);
     align-items: center;
@@ -907,7 +909,7 @@ body.dark_mode_active .home .img-box img {
 }
 
 .contact .box-content .box .text-box .result {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--text-700);
 }
 

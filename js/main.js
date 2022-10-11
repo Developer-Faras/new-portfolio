@@ -12,11 +12,20 @@ $(document).ready(function () {
     $('.navigation li a').click(function (e) {
         e.preventDefault();
 
+        // Nav Active Class
         $(this).addClass('active').parent('li').siblings().children('a').removeClass('active');
+
+        // Section Toggle 
+        let target = $(this).attr('href');
+        let animation = [''];
+
+        $(`section${target}`).each(function () {
+            $(this).removeClass('hidden').addClass('animated').siblings('section').addClass('hidden').removeClass('animated');
+        });
     });
 
 
-    // Theme Changer
+    // Theme Changer Toggle
     $('.theme_changer_toggler').click(function (e) {
         e.preventDefault();
 
@@ -120,6 +129,7 @@ $(document).ready(function () {
 
     });
 
+    // Contact Class Toggle
     $('input, textarea').each(function (e) {
         $(this).keyup(function () {
             let value = $(this).val();
