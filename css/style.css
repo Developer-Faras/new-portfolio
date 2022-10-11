@@ -578,29 +578,29 @@ body.dark_mode_active .home .img-box img {
 }
 
 /* About Skill  */
-.about .skills {
+.skill-section .skills {
     width: 100%;
     height: auto;
     margin-top: 3rem;
 }
 
-.about .skills .skills-wraper {
+.skill-section .skills .skills-wraper {
     width: 100%;
 }
 
-.about .skill-content {
+.skill-section .skill-content {
     width: 100%;
     align-items: flex-start;
     justify-content: space-between;
     column-gap: 2rem;
 }
 
-.about .skill-content .wraper {
+.skill-section .skill-content .wraper {
     max-width: 46%;
     flex: 0 0 46%;
 }
 
-.about .skill-content .wraper .title {
+.skill-section .skill-content .wraper .title {
     font-size: 1.7rem;
     font-weight: 800;
     font-family: var(--font-slab);
@@ -609,30 +609,30 @@ body.dark_mode_active .home .img-box img {
 }
 
 
-.about .skill-wraper {
+.skill-section .skill-wraper {
     width: 100%;
 }
 
-.about .skill-wraper .skill {
+.skill-section .skill-wraper .skill {
     width: 100%;
     padding: 0.2rem 0;
     margin-bottom: 1rem;
 }
 
-.about .skill .text {
+.skill-section .skill .text {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 0.6rem;
 }
 
-.about .skill .text h5 {
+.skill-section .skill .text h5 {
     font-size: 1rem;
     font-weight: 800;
     color: var(--text-900);
 }
 
-.about .skill .progress-bar {
+.skill-section .skill .progress-bar {
     width: 100%;
     height: 8px;
     background: var(--bg-50);
@@ -640,7 +640,7 @@ body.dark_mode_active .home .img-box img {
     overflow: hidden;
 }
 
-.about .skill .progress-bar .progress {
+.skill-section .skill .progress-bar .progress {
     background: var(--skin-color);
     height: 100%;
 }

@@ -84,12 +84,12 @@
         width: 100%;
     }
 
-    .about .another-skill {
+    .skill-section .another-skill {
         display: block;
         margin-top: 5rem;
     }
 
-    .about .skill-wraper .skill {
+    .skill-section .skill-wraper .skill {
         margin-bottom: 1.6rem;
     }
 
@@ -281,12 +281,12 @@
         width: 100%;
     }
 
-    .about .skill-content .wraper {
+    .skill-section .skill-content .wraper {
         max-width: 100%;
         flex: 0 0 100%;
     }
 
-    .about .skill-content .wraper:first-child {
+    .skill-section .skill-content .wraper:first-child {
         margin-bottom: 3rem;
     }
 
