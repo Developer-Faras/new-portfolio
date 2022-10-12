@@ -1,3 +1,14 @@
+$(window).on('load', function () {
+    setTimeout(function () {
+        $('.loader').addClass('loaded');
+    }, 2000);
+
+    setTimeout(function () {
+        $('.loader').remove();
+    }, 5000);
+});
+
+
 $(document).ready(function () {
     // Nav Toggler
     $('.nav-toggler').click(function () {
@@ -168,12 +179,12 @@ $(document).ready(function () {
         });
     });
 
+    // Dummy Anchor
     $('a').click(function (e) {
         e.preventDefault();
 
         console.log("Clicked An Anchor");
     });
-
 });
 
 // Testimonials  Slider
