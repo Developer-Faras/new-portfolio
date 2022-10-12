@@ -20,6 +20,8 @@
     --text-700: #504e70;
     --swiper-navigation-size: 24px !important;
     --swiper-theme-color: var(--text-900) !important;
+    --animate-duration: 1s;
+    --animate-delay: 0.9s;
 }
 
 
@@ -90,7 +92,7 @@ section {
 }
 
 section .container {
-    padding-top: 1.875rem;
+    /* padding-top: 1.875rem; */
     padding-bottom: 3.75rem;
 }
 

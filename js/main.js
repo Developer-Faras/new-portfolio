@@ -9,19 +9,44 @@ $(document).ready(function () {
 
 
     // Navigation
+    let curentAnimation = '';
+
     $('.navigation li a').click(function (e) {
         e.preventDefault();
 
         // Nav Active Class
         $(this).addClass('active').parent('li').siblings().children('a').removeClass('active');
 
-        // Section Toggle 
-        let target = $(this).attr('href');
-        let animation = [''];
+        $('.nav-toggler').removeClass('mobile_active');
+        $('.sidebar').removeClass('mobile_active');
+        $('.fixed_content').removeClass('nav_active');
+        $('.mobile_menu_overlay').removeClass('nav_active');
 
-        $(`section${target}`).each(function () {
-            $(this).removeClass('hidden').addClass('animated').siblings('section').addClass('hidden').removeClass('animated');
-        });
+
+        // Section Toggle  With Animation
+        let target = $(this).attr('href');
+        let animationNumber = Math.floor(Math.random() * 26);
+
+
+        let animationIn = ['animate__backInDown', 'animate__backInLeft', 'animate__backInRight', 'animate__backInUp', 'animate__bounceIn', 'animate__bounceInDown', 'animate__bounceInLeft', 'animate__bounceInRight', 'animate__bounceInUp', 'animate__fadeInDown', 'animate__fadeInDown', 'animate__fadeInRight', 'animate__fadeInUp', 'animate__fadeInTopLeft', 'animate__fadeInTopRight', 'animate__fadeInBottomLeft', 'animate__fadeInBottomLeft', 'animate__flipInX', 'animate__flipInY', 'animate__rotateIn', 'animate__rotateInDownLeft', 'animate__rotateInDownRight', 'animate__rotateInUpLeft', 'animate__rotateInUpRight', 'animate__rollIn', 'animate__zoomIn'];
+
+        let animationOut = ['animate__backOutDown', 'animate__backOutLeft', 'animate__backOutRight', 'animate__backOutUp', 'animate__bounceOut', 'animate__bounceOutDown', 'animate__bounceOutLeft', 'animate__bounceOutRight', 'animate__bounceOutUp', 'animate__fadeOutDown', 'animate__fadeOutDown', 'animate__fadeOutRight', 'animate__fadeOutUp', 'animate__fadeOutTopLeft', 'animate__fadeOutTopRight', 'animate__fadeOutBottomLeft', 'animate__fadeOutBottomLeft', 'animate__flipOutX', 'animate__flipOutY', 'animate__rotateOut', 'animate__rotateOutDownLeft', 'animate__rotateOutDownRight', 'animate__rotateOutUpLeft', 'animate__rotateOutUpRight', 'animate__rollOut', 'animate__zoomOut'];
+
+
+        $('.section.active').removeClass(curentAnimation).addClass(`animate__animated ${animationOut[animationNumber]}`);
+        setTimeout(function () {
+            $('.section.active').addClass('hidden').removeClass(`${animationOut[animationNumber]} active animate__animated`);
+        }, 1000);
+
+
+        setTimeout(function () {
+            let newAnimation = animationIn[animationNumber];
+            curentAnimation = newAnimation;
+
+            $(`section${target}`).removeClass('hidden').addClass(`${newAnimation} animate__animated active`);
+            console.log(curentAnimation);
+        }, 1000);
+
     });
 
 
