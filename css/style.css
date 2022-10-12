@@ -663,11 +663,11 @@ body.dark_mode_active .home .img-box img {
     padding: 0;
     transition: all 0.2s ease;
     border: 2px solid var(--bg-50);
+    border-radius: 8px;
 }
 
 .services .services-item .inner {
     background: var(--bg-100);
-    border: 1px solid var(--bg-50);
     padding: 26px 15px;
     border-radius: 10px;
     text-align: center;

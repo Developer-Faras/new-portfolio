@@ -6,7 +6,7 @@ $(window).on('load', function () {
 
     setTimeout(function () {
         $('.loader').remove();
-    }, 5000);
+    }, 3000);
 });
 
 
