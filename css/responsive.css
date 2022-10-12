@@ -18,6 +18,11 @@
     }
 }
 
+@media (max-width: 1399px) {
+    html {
+        font-size: 15px;
+    }
+}
 
 /* 1000 - 1100 Learge Laptop */
 @media (max-width: 1099px) {
@@ -164,6 +169,10 @@
 /* Below To 700 */
 @media (max-width: 800px) {
 
+    section .container {
+        padding-top: 1rem;
+        padding-bottom: 3.75rem;
+    }
 
     .main-content {
         left: 0px;

@@ -16,8 +16,10 @@
     --bg-900: #f2f2fc;
     --bg-100: #fdf9ff;
     --bg-50: #e8dfec;
-    --text-900: #302c4d;
-    --text-700: #504e70;
+    --text-900: #111111;
+    --text-700: #333333;
+    /* --text-900: #302c4d;
+    --text-700: #504e70; */
     --swiper-navigation-size: 24px !important;
     --swiper-theme-color: var(--text-900) !important;
     --animate-duration: 1s;
@@ -92,7 +94,7 @@ section {
 }
 
 section .container {
-    /* padding-top: 1.875rem; */
+    padding-top: 1.875rem;
     padding-bottom: 3.75rem;
 }
 

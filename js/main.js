@@ -44,7 +44,8 @@ $(document).ready(function () {
             curentAnimation = newAnimation;
 
             $(`section${target}`).removeClass('hidden').addClass(`${newAnimation} animate__animated active`);
-            console.log(curentAnimation);
+
+            $('.main-content').scrollTop(0);
         }, 1000);
 
     });
