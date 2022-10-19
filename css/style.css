@@ -402,19 +402,31 @@ section .section-header .section-title:after {
     position: relative;
 }
 
-/* .home .img-box img {
-    background: linear-gradient(0deg, #242424, #747474);
-    border: 6px solid var(--skin-color);
-    height: 480px;
-    border-radius: 3px;
-    padding: 1rem 1rem 0 1rem;
+.home .img-box img {
+    position: relative;
+    z-index: 9999;
+    max-width: 100%;
+    max-height: 100%;
+    background: radial-gradient(#5d5d5d, #232323);
+    border-radius: 6px;
 }
 
-body.dark_mode_active .home .img-box img {
-    background: transparent;
-} */
+.shape {
+    position: absolute;
+}
+
+.img-shape1 {
+    background: var(--skin-color);
+    width: 80%;
+    height: 90%;
+    top: -38px;
+    left: -30px;
+    border-radius: 3px;
+}
 
 
+
+/* About */
 .about .about-text {
     display: block;
     margin-bottom: 1rem;

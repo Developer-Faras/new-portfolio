@@ -27,32 +27,32 @@
 }
 
 .loader-wraper .preloader .top .spiner {
-
 	width: 80px;
 	height: 80px;
 	display: block;
-	border: 3px solid #ddd;
+	border: 3px solid var(--scrollbar-bg);
 	border-radius: 50%;
-	border-left-color: #444;
+	border-left-color: var(--skin-color);
 	animation: spiner 1s linear infinite;
 }
 
 .loader-wraper .preloader .middle {
-	margin-top: 70px;
+	margin: 70px auto;
+	text-align: center;
 }
 
 .loader-wraper .preloader .middle .later-loading {
 	font-size: 78px;
-	font-weight: bold;
-	font-family: sans-serif;
+	font-family: var(--font-slab);
 	letter-spacing: 14px;
-	color: #b0b0b0;
+	color: var(--scrollbar-bg);
 	position: relative;
 	margin: 0;
 	padding: 0;
 	outline: 0;
 	box-sizing: border-box;
-	line-height: 115%;
+	line-height: 130%;
+	font-weight: 800;
 }
 
 .loader-wraper .preloader .middle .later-loading:before {
@@ -60,7 +60,7 @@
 	position: absolute;
 	left: 0px;
 	transform: rotateY(-90deg);
-	color: #000;
+	color: var(--skin-color);
 	z-index: 100;
 	animation: laters-loading 4s ease-in-out infinite;
 	top: 0px;
@@ -108,11 +108,11 @@
 }
 
 .loader-wraper .preloader .bottom .loading {
-
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 6px;
 	animation: jumping 0.6s linear infinite;
+	color: var(--skin-color);
 }
 
 .loader-wraper .preloader .bottom .loading:nth-child(2) {
@@ -159,18 +159,18 @@
 	top: 0;
 	width: 50%;
 	height: 100vh;
-	transition: 0.4s;
+	transition: 0.8s;
 	z-index: 10;
 }
 
 .loader-wraper .loader-bg .left {
 	left: 0;
-	background: linear-gradient(90deg, #c6c6c6, #ffffff);
+	background: linear-gradient(90deg, #c5c4c4, #ffffff);
 }
 
 .loader-wraper .loader-bg .right {
 	right: 0;
-	background: linear-gradient(-90deg, #c6c6c6, #ffffff);
+	background: linear-gradient(-90deg, #c5c4c4, #ffffff);
 }
 
 .loader-wraper.loaded .loader-bg .left {
@@ -223,5 +223,43 @@
 	100% {
 		transform: translateY(-18px);
 		opacity: 0;
+	}
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+	.loader-wraper .preloader .middle .later-loading {
+		font-size: 68px;
+	}
+}
+
+@media (max-width: 500px) {
+	.loader-wraper .preloader .middle .later-loading {
+		font-size: 58px;
+	}
+}
+
+@media (max-width: 400px) {
+	.loader-wraper .preloader .middle .later-loading {
+		font-size: 48px;
+	}
+}
+
+@media (max-width: 300px) {
+	.loader-wraper .preloader .middle .later-loading {
+		font-size: 42px;
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 200px) {
+	.loader-wraper .preloader .middle .later-loading {
+		font-size: 32px;
+		letter-spacing: 3px;
 	}
 }
