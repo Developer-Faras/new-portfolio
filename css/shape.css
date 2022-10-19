@@ -1,0 +1,21 @@
+.home .img-box img {
+    position: relative;
+    z-index: 9999;
+    max-width: 100%;
+    max-height: 100%;
+    background: radial-gradient(#5d5d5d, #232323);
+    border-radius: 6px;
+}
+
+.shape {
+    position: absolute;
+}
+
+.img-shape1 {
+    background: var(--skin-color);
+    width: 80%;
+    height: 90%;
+    top: -38px;
+    left: -30px;
+    border-radius: 3px;
+}
