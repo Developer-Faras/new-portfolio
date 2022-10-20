@@ -18,8 +18,6 @@
     --bg-50: #e8dfec;
     --text-900: #111111;
     --text-700: #333333;
-    /* --text-900: #302c4d;
-    --text-700: #504e70; */
     --swiper-navigation-size: 24px !important;
     --swiper-theme-color: var(--text-900) !important;
     --animate-duration: 1s;
@@ -341,7 +339,6 @@ section .section-header .section-title:after {
 /* Sections Design */
 .home {
     min-height: calc(100vh - 4rem);
-    /* min-height: 45rem; */
     display: flex;
     background: var(--bg-900);
     align-items: center;
@@ -411,11 +408,11 @@ section .section-header .section-title:after {
     border-radius: 6px;
 }
 
-.shape {
+.home .shape {
     position: absolute;
 }
 
-.img-shape1 {
+.home .img-shape1 {
     background: var(--skin-color);
     width: 80%;
     height: 90%;

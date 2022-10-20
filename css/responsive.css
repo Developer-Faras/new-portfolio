@@ -72,8 +72,11 @@
 
     .home .img-box img {
         height: auto;
-        border-radius: 3px;
         width: 100%;
+    }
+
+    .home .img-shape1 {
+        display: none;
     }
 
     /* About */
