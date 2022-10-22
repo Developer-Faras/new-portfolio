@@ -1,0 +1,9 @@
+.fadeInLeft {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0);
+}
+
+.fadeInLeft.animated {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
