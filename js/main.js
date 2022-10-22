@@ -21,8 +21,7 @@ $(document).ready(function () {
 
 
     // Navigation
-    let curentAnimation = '';
-
+    let curentScrollTop = '';
     $('.navigation li a').click(function (e) {
         e.preventDefault();
 
@@ -34,34 +33,22 @@ $(document).ready(function () {
         $('.fixed_content').removeClass('nav_active');
         $('.mobile_menu_overlay').removeClass('nav_active');
 
-
-        // Section Toggle  With Animation
-        let target = $(this).attr('href');
-        let animationNumber = Math.floor(Math.random() * 26);
+        $('.navigation li a').addClass('disabled');
 
 
-        let animationIn = ['animate__backInDown', 'animate__backInLeft', 'animate__backInRight', 'animate__backInUp', 'animate__bounceIn', 'animate__bounceInDown', 'animate__bounceInLeft', 'animate__bounceInRight', 'animate__bounceInUp', 'animate__fadeInDown', 'animate__fadeInDown', 'animate__fadeInRight', 'animate__fadeInUp', 'animate__fadeInTopLeft', 'animate__fadeInTopRight', 'animate__fadeInBottomLeft', 'animate__fadeInBottomLeft', 'animate__flipInX', 'animate__flipInY', 'animate__rotateIn', 'animate__rotateInDownLeft', 'animate__rotateInDownRight', 'animate__rotateInUpLeft', 'animate__rotateInUpRight', 'animate__rollIn', 'animate__zoomIn'];
+        let sectionTop = $($(this).attr('href')).offset().top;
 
-        let animationOut = ['animate__backOutDown', 'animate__backOutLeft', 'animate__backOutRight', 'animate__backOutUp', 'animate__bounceOut', 'animate__bounceOutDown', 'animate__bounceOutLeft', 'animate__bounceOutRight', 'animate__bounceOutUp', 'animate__fadeOutDown', 'animate__fadeOutDown', 'animate__fadeOutRight', 'animate__fadeOutUp', 'animate__fadeOutTopLeft', 'animate__fadeOutTopRight', 'animate__fadeOutBottomLeft', 'animate__fadeOutBottomLeft', 'animate__flipOutX', 'animate__flipOutY', 'animate__rotateOut', 'animate__rotateOutDownLeft', 'animate__rotateOutDownRight', 'animate__rotateOutUpLeft', 'animate__rotateOutUpRight', 'animate__rollOut', 'animate__zoomOut'];
-
-
-        $('.section.active').removeClass(curentAnimation).addClass(`animate__animated ${animationOut[animationNumber]}`);
-        setTimeout(function () {
-            $('.section.active').addClass('hidden').removeClass(`${animationOut[animationNumber]} active animate__animated`);
-        }, 1000);
-
-
-        setTimeout(function () {
-            let newAnimation = animationIn[animationNumber];
-            curentAnimation = newAnimation;
-
-            $(`section${target}`).removeClass('hidden').addClass(`${newAnimation} animate__animated active`);
-
-            $('.main-content').scrollTop(0);
-        }, 1000);
-
+        $('.main-content').animate({
+            scrollTop: curentScrollTop + sectionTop
+        }, 2000, function () {
+            curentScrollTop = $('.main-content').scrollTop();
+            $('.navigation li a').removeClass('disabled');
+        });
     });
 
+    $('.main-content').scroll(function () {
+        curentScrollTop = $(this).scrollTop();
+    })
 
     // Theme Changer Toggle
     $('.theme_changer_toggler').click(function (e) {
@@ -195,11 +182,11 @@ $(document).ready(function () {
     });
 
     // Dummy Anchor
-    $('a').click(function (e) {
-        e.preventDefault();
+    // $('a').click(function (e) {
+    //     e.preventDefault();
 
-        console.log("Clicked An Anchor");
-    });
+    //     console.log("Clicked An Anchor");
+    // });
 });
 
 // Testimonials  Slider
@@ -240,7 +227,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// // Components Animation
+// Components Animation
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -256,9 +243,9 @@ AOS.init({
     // // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     // offset: 120, // offset (in px) from the original trigger point
     // delay: 0, // values from 0 to 3000, with step 50ms
-    // duration: 800, // values from 0 to 3000, with step 50ms
+    duration: 1500, // values from 0 to 3000, with step 50ms
     easing: 'ease', // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
+    mirror: true, // whether elements should animate out while scrolling past them
     // anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });

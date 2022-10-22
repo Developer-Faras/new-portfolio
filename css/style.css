@@ -88,7 +88,7 @@ img {
 
 section {
     padding: 0 15px;
-    min-height: calc(100vh - 4rem);
+    min-height: 100vh;
 }
 
 section .container {
@@ -176,7 +176,10 @@ section .section-header .section-title:after {
     display: none !important;
 }
 
-
+a.disabled {
+    cursor: no-drop;
+    pointer-events: none;
+}
 
 
 /* Main Design */
