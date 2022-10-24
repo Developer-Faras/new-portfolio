@@ -17,6 +17,7 @@ $(document).ready(function () {
     // Nav Toggler
     $('.nav-toggler').click(function () {
         $(this).toggleClass('mobile_active');
+        $(this).children('i').toggleClass('fa-bars fa-times');
         $('.sidebar').toggleClass('mobile_active');
         $('.fixed_content').toggleClass('nav_active');
         $('.mobile_menu_overlay').toggleClass('nav_active');
@@ -32,6 +33,7 @@ $(document).ready(function () {
         $(this).addClass('active').parent('li').siblings().children('a').removeClass('active');
 
         $('.nav-toggler').removeClass('mobile_active');
+        $('.nav-toggler i').toggleClass('fa-bars fa-times');
         $('.sidebar').removeClass('mobile_active');
         $('.fixed_content').removeClass('nav_active');
         $('.mobile_menu_overlay').removeClass('nav_active');
@@ -49,6 +51,7 @@ $(document).ready(function () {
         });
     });
 
+    // Main Content Scroll / Navigation Click Scroll
     $('.main-content').scroll(function () {
         curentScrollTop = $(this).scrollTop();
     })
@@ -98,7 +101,6 @@ $(document).ready(function () {
         });
     });
 
-
     // Remove Active Fixed Cmponents To Scroll
     $('.main-content').scroll(function () {
         if ($('.theme_color_wraper').hasClass('active')) {
@@ -129,7 +131,6 @@ $(document).ready(function () {
 
     // Dark Mode Toggler
     let dark_mode = false;
-
     $(".mode_changer").click(function (e) {
         e.preventDefault();
         $(this).children('i').toggleClass('fa-moon fa-sun');
@@ -184,69 +185,61 @@ $(document).ready(function () {
         });
     });
 
-    // Dummy Anchor
-    // $('a').click(function (e) {
-    //     e.preventDefault();
-
-    //     console.log("Clicked An Anchor");
-    // });
 
     $('.main-content').scrollAnimation({
         deaclare: $('[data-aos]'),
         animateClass: 'aos-animate',
         mirror: true,
+        ofset: 120
     });
 
 
 });
 
-// Testimonials  Slider
-var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    initialSlide: 1,
-    loop: true,
-    speed: 300,
-    coverflowEffect: {
-        rotate: 70,
-        stretch: 3,
-        depth: 200,
-        modifier: 1,
-        slideShadows: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        // when window width is >= 320px
-        100: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-        // when window width is >= 640px
-        900: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        }
-    },
-    // autoplay: {
-    //     delay: 2000,
-    // },
-});
+// // Testimonials Slider
+// var swiper = new Swiper(".mySwiper", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     initialSlide: 1,
+//     loop: true,
+//     speed: 300,
+//     coverflowEffect: {
+//         rotate: 70,
+//         stretch: 3,
+//         depth: 200,
+//         modifier: 1,
+//         slideShadows: true,
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     breakpoints: {
+//         // when window width is >= 320px
+//         100: {
+//             slidesPerView: 1,
+//             spaceBetween: 30,
+//         },
+//         // when window width is >= 640px
+//         900: {
+//             slidesPerView: 2,
+//             spaceBetween: 20
+//         }
+//     },
+//     autoplay: {
+//         delay: 3000,
+//     },
+// });
 
 
-// AOS
+// Animate On Scroll
 AOS.init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    initClassName: 'aos-init', // class applied after initialization
-    animatedClassName: 'aos-animate', // class applied on animation
-
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    duration: 1000, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
+    disable: false,
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate',
+    offset: 120,
+    duration: 1000,
+    easing: 'ease',
 });

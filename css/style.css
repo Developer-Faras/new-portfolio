@@ -1137,7 +1137,7 @@ a.disabled {
     z-index: 600;
     width: 3rem;
     height: 150px;
-    transition: all 0.8s ease;
+    transition: all 0.6s ease;
 }
 
 
@@ -1156,9 +1156,12 @@ a.disabled {
     transition: all 1s ease;
     overflow: hidden;
     position: relative;
+    font-size: 1.5rem;
+    line-height: 0;
+    color: var(--skin-color);
 }
 
-.nav-toggler span {
+/* .nav-toggler span {
     display: inline-block;
     width: 1.5rem;
     height: 0.2rem;
@@ -1205,13 +1208,9 @@ a.disabled {
 
 .nav-toggler.mobile_active span {
     left: -25px;
-}
+} */
 
 /* Other Btn */
-.fixed_content {
-    transition: all 0.6s ease;
-}
-
 .fixed_content .btn {
     background: var(--bg-100);
     border: 3px solid var(--bg-50);
