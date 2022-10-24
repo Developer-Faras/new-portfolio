@@ -1,0 +1,129 @@
+.my-slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.my-slider .slide-wraper {
+    width: 102%;
+    height: 380px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    position: relative;
+    left: -12px;
+}
+
+.my-slider .slide-wraper .slide {
+    width: 28%;
+    height: 380px;
+    flex: 0 0 30%;
+    transform: scale(0);
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.my-slider .slide-wraper .slide.active-slide {
+    width: 36%;
+    transform: scale(1) translateX(-54%);
+    margin: 0 1rem;
+    left: 50%;
+}
+
+.prev-active {
+    left: 0;
+}
+
+.next-active {
+    right: 0;
+}
+
+.prev-active,
+.next-active {
+    transform: scale(0.9) !important;
+}
+
+/* Background Design */
+.my-slider .slide-wraper .slide:before,
+.my-slider .slide-wraper .slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.my-slider .slide-wraper .slide.active-slide:after,
+.my-slider .slide-wraper .slide.active-slide:before {
+    background: var(--bg-50);
+    border-radius: 20px 60px 20px 150px;
+    transform: skew(8deg, 0deg);
+    z-index: 5;
+}
+
+.my-slider .slide-wraper .slide.active-slide:before {
+    background: var(--skin-color);
+    transform: skew(8deg, 0deg) translate(0px, -7px) scale(1.04);
+}
+
+.my-slider .slide-wraper .slide.prev-active:after,
+.my-slider .slide-wraper .slide.prev-active:before,
+.my-slider .slide-wraper .slide.next-active:after,
+.my-slider .slide-wraper .slide.next-active:before {
+    background: var(--bg-50);
+    border-radius: 30px 20px 150px 20px;
+    transform: skew(6deg, 0deg);
+    z-index: 5;
+}
+
+.my-slider .slide-wraper .slide.prev-active:before,
+.my-slider .slide-wraper .slide.next-active:before {
+    background: var(--skin-color);
+    transform: skew(6deg, 0deg) translate(0px, -7px) scale(1.04);
+}
+
+.my-slider .slide-wraper .slide.active-slide .testimonial-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    border-radius: 10px 80px 10px 140px;
+}
+
+.my-slider .slide-wraper .slide.prev-active .testimonial-item,
+.my-slider .slide-wraper .slide.next-active .testimonial-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    border-radius: 10px 50px 90px 60px;
+}
+
+/* Testimonials Design */
+.my-slider .slide-wraper .slide .testimonial-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    border-radius: 10px 80px 10px 140px;
+    padding: 3rem 1rem;
+    padding-bottom: 5rem;
+}
+
+.my-slider .slide-wraper .slide .testimonial-item img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    top: -60px;
+    left: 28%;
+    transform: translate(0, 0%);
+    box-shadow: 0px 0px 30px -10px var(--text-700);
+}
+
+.my-slider .slide-wraper .slide .testimonial-item .name {}

@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
+    <link rel="stylesheet" href="./css/my-slider.css">
+
 
 </head>
 
@@ -537,12 +539,13 @@
 
                     <div class="row slider">
                         <!-- data-aos="zoom-in" -->
-                        <div class="swiper slider">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
+                        <div class="swiper my-slider">
+                            <div class="slide-wraper">
+                                <div class="slide prev-active">
                                     <div class="testimonial-item">
-                                        <h5 class="name">Mr. Jhon</h5>
+                                        <img src="./images/testimonials/1.jpg" alt="">
+                                        <h3 class="name">Mr. Jhon</h3>
+                                        <h4 class="company-name">Company</h4>
                                         <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
                                             reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
                                             nulla
@@ -551,9 +554,11 @@
                                     </div>
                                 </div> <!-- Slide -->
 
-                                <div class="swiper-slide">
+                                <div class="slide active-slide">
                                     <div class="testimonial-item">
-                                        <h5 class="name">Mr. Jhon</h5>
+                                        <img src="./images/testimonials/2.jpg" alt="">
+                                        <h3 class="name">Mr. Jhon</h3>
+                                        <h4 class="company-name">Company</h4>
                                         <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
                                             reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
                                             nulla
@@ -562,9 +567,11 @@
                                     </div>
                                 </div> <!-- Slide -->
 
-                                <div class="swiper-slide">
+                                <div class="slide next-active">
                                     <div class="testimonial-item">
-                                        <h5 class="name">Mr. Jhon</h5>
+                                        <img src="./images/testimonials/3.jpg" alt="">
+                                        <h3 class="name">Mr. Jhon</h3>
+                                        <h4 class="company-name">Company</h4>
                                         <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
                                             reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
                                             nulla
@@ -573,6 +580,31 @@
                                     </div>
                                 </div> <!-- Slide -->
 
+                                <div class="slide">
+                                    <div class="testimonial-item">
+                                        <img src="./images/testimonials/4.jpg" alt="">
+                                        <h3 class="name">Mr. Jhon</h3>
+                                        <h4 class="company-name">Company</h4>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                                            reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
+                                            nulla
+                                            unde. Labore dolores facere esse, veritatis ab possimus voluptates commodi
+                                            distinctio?</p>
+                                    </div>
+                                </div> <!-- Slide -->
+
+                                <div class="slide">
+                                    <div class="testimonial-item">
+                                        <img src="./images/testimonials/5.jpg" alt="">
+                                        <h3 class="name">Mr. Jhon</h3>
+                                        <h4 class="company-name">Company</h4>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                                            reprehenderit aliquid fugit autem temporibus dicta mollitia rem quaerat
+                                            nulla
+                                            unde. Labore dolores facere esse, veritatis ab possimus voluptates commodi
+                                            distinctio?</p>
+                                    </div>
+                                </div> <!-- Slide -->
                             </div>
                         </div>
                     </div>
@@ -580,7 +612,7 @@
                 </div>
             </section> <!-- Testimonils -->
 
-            <section class="section portfolio hidden" id="projects">
+            <section class="section portfolio " id="projects">
                 <div class="container padd-15">
 
                     <div class="row">
@@ -939,6 +971,7 @@
     <script src="./lib/aos/aos.js"></script>
 
     <script src="./js/aos-helper.js"></script>
+    <script src="./js/my-slider.js"></script>
 
     <script src="./js/main.js"></script>
 </body>
