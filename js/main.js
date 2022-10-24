@@ -7,6 +7,9 @@ $(window).on('load', function () {
     setTimeout(function () {
         $('.loader').remove();
     }, 1500);
+
+
+    // AOS.refresh();
 });
 
 // All Jquery Event
@@ -189,10 +192,12 @@ $(document).ready(function () {
     // });
 
     $('.main-content').scrollAnimation({
-        deaclare: $('[scroll_anim]'),
-        animateClass: 'animated',
+        deaclare: $('[data-aos]'),
+        animateClass: 'aos-animate',
         mirror: true,
     });
+
+
 });
 
 // Testimonials  Slider
@@ -233,3 +238,15 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// AOS
+AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+});

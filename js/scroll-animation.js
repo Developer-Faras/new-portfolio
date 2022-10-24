@@ -10,7 +10,6 @@
         }, customConfig);
 
         let { deaclare, animateClass, ofset, mirror } = config;
-        let element = $(this);
 
         $(this).scroll(function () {
             $(deaclare).each(function () {
