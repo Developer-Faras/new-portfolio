@@ -1022,9 +1022,9 @@ a.disabled {
     padding-bottom: 2rem;
 }
 
-.testimonials .section-header {
+/* .testimonials .section-header {
     margin-bottom: 6.375rem;
-}
+} */
 
 
 
@@ -1067,7 +1067,7 @@ a.disabled {
 .fixed_content {
     position: fixed;
     top: 40px;
-    right: 40px;
+    right: 34px;
     z-index: 600;
     width: 3rem;
     height: 150px;
